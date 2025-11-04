@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "The Void",
-    pageTitleSuffix: "Player Wiki",
+    pageTitle: "The Void Player Wiki",
+    pageTitleSuffix: " | Void Wiki",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
