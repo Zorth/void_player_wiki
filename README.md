@@ -1,18 +1,17 @@
-# Quartz v4
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+# Setting up Obsidian.md
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+Clone the repo using github.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Copy the `/content/.obsidian.defaults` folder and name it `/content/.obsidian`.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+Open Obsidian.md > open folder as vault > select the `/content` folder.
 
-## Sponsors
+# Committing
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Use git, lazygit, or the git plugin (in obsidian) to push changes to v4, they will then automatically be updated to the website.
+
+ALWAYS `git pull --rebase` before pushing, preferably before editing.
+
+This can be defaulted with `git config pull.rebase true` (optionally with `--global` if you want it everywhere).
+
