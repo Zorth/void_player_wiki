@@ -6,7 +6,7 @@ aliases:
 date:
 ---
 
-# Callouts
+## Predefined callouts
 Callouts are used to section off information into blocks that are visible and colored. Stick to the dedicated use for predefined callouts in order to avoid confusion.
 
 > [!abstract]
@@ -16,6 +16,11 @@ Callouts are used to section off information into blocks that are visible and co
 > [!quote]
 > Aliases: "quote", "cite"
 > Quotes are used when specifically citing information given by a voidmaster that is written word-for-word. Information in here is good to trace back to it source. If a given quote is to be proven false, it can be determined the NPC lied and not that notes taken were incorrect, because the quote must be cited correctly from the words of the voidmaster.
+
+> [!question]
+> Aliases: "question", "help", "faq"
+> Question callouts are used for unknowns, open plotpoints, possible quests or investigation points that are unanswered.
+
 
 ## All Callouts
 
@@ -33,9 +38,6 @@ Callouts are used to section off information into blocks that are visible and co
 
 > [!success]
 > Aliases: "success", "check", "done"
-
-> [!question]
-> Aliases: "question", "help", "faq"
 
 > [!warning]
 > Aliases: "warning", "attention", "caution"

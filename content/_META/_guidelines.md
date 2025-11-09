@@ -5,10 +5,9 @@ aliases:
   - Wiki Guidelines
 date:
 ---
+
+## Tasks
 - [ ] undone task
 - [x] done task
-- [/] wip task
-- [?] question task
-- [l] location task 
 
-![[_callouts|Callouts]]
+![[_callouts#Predefined callouts|Callouts]]
