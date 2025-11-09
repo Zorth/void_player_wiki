@@ -26,4 +26,7 @@ Simply navigate to the [github repo]( https://github.com/Zorth/void_player_wiki 
 4. Use git (or lazygit, GitHub desktop, etc.) to commit and push changes to the repository.
 5. Changes to the `v4` branch will sync to the wiki after deployment.
 
+> [!info]
+> You can use the [[_NEWNOTE]] and [[_SESSIONNOTE]] templates to easily create notes with Obsidian.
+
 [^1]: This could also be achieved by forking the repo and making a pull request, if you are familiar with GitHub.
