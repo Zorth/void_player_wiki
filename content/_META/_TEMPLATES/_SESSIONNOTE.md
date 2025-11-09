@@ -1,11 +1,12 @@
 ---
-title: {{date}}
+title: "{{date}} World"
 draft: false
 aliases:
 - 
 date:
-world:
 ---
-#session 
+#session `<World>`
+# `<Session Title>`
 ## [[pc|Player Character]]s
+- 
 ## Notes

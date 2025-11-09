@@ -21,6 +21,9 @@ Callouts are used to section off information into blocks that are visible and co
 > Aliases: "question", "help", "faq"
 > Question callouts are used for unknowns, open plotpoints, possible quests or investigation points that are unanswered.
 
+> [!todo]
+> Aliases: "todo"
+> Todo's are used for things that should be done in the wiki. So not anything in [[The Void]] but things that are missing from the wiki
 
 ## All Callouts
 
@@ -29,9 +32,6 @@ Callouts are used to section off information into blocks that are visible and co
 
 > [!info]
 > Aliases: "info"
-
-> [!todo]
-> Aliases: "todo"
 
 > [!tip]
 > Aliases: "tip", "hint", "important"
