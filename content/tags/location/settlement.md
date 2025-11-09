@@ -1,5 +1,5 @@
 ---
-title: location/settlement
+title: settlement
 draft: false
 aliases:
   - "#location/settlement"
