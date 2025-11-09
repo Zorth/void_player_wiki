@@ -5,7 +5,7 @@ aliases:
   - 
 date:
 ---
-#location/world
+#world
 
 Kalogeron is the metropolis world ran by Mattis.
 

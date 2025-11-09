@@ -1,5 +1,5 @@
 ---
-title: Session Notes
+title: session
 draft: false
 aliases:
 - Session Note
