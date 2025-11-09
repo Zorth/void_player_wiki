@@ -1,4 +1,4 @@
-#location
+#location/settlement
 
 The Void is the space between stories, the nowhere that you need to get somewhere. Just like you cannot have light without darkness, you cannot have existence without **The Void**. 
 
