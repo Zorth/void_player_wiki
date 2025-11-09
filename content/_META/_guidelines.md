@@ -16,6 +16,7 @@ date:
 4. Make articles atomic and typed with tags.
 	- Keep articles (not session reports) about only 1 thing and embed (`![[articlename]]`) articles in groupings.
 	- Use the correct tag with the correct article, at the first line of the article. See [Tags]( https://void.tarragon.be/tags/ ) for details on the tags and when to use them.
+5. Try to avoid making **orphans** (files that don't like to, or from, anywhere). These make navigating the wiki more difficult.
 
 ## Tasks
 - [ ] not done task
