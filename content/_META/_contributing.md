@@ -1,8 +1,8 @@
 ---
-title:
+title: Contributing to the wiki
 draft: false
 aliases:
-  - 
+  - Contributing to the wiki
 date:
 ---
 There are a couple ways to contribute to the wiki, first and foremost all articles written should follow the [[_guidelines]].
