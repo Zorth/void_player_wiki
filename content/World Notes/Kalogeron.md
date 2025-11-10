@@ -32,3 +32,4 @@ Kalogeron is the metropolis world ran by Mattis.
 - [[Esoteric]]
 - [[Naz]]
 - [[Andreía]]
+- [[Ebrius]]
