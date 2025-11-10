@@ -5,7 +5,7 @@ aliases:
   - Lady Kaevorin
 date:
 ---
-#npc 
+#npc [[Kalogeron]]
 
 Head of house [[Kaevorin]]
 

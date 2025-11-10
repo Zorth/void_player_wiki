@@ -5,7 +5,7 @@ aliases:
   - 
 date:
 ---
-#npc 
+#npc [[Kalogeron]]
 
 Head of House [[Adalet]], "The council's judge."
 

@@ -5,7 +5,7 @@ aliases:
   - 
 date:
 ---
-#location 
+#location [[Kalogeron]]
 
 **The Underbelly** is a name for the shady underground city that lies beneath [[Kalogeron]]
 

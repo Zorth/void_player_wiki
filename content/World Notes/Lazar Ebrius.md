@@ -5,7 +5,7 @@ aliases:
   - Lord Ebrius
 date:
 ---
-#npc 
+#npc [[Kalogeron]]
 
 Lord of house [[Ebrius]]
 
