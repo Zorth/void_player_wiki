@@ -5,7 +5,7 @@ aliases:
 - Lady Fortuna
 date:
 ---
-#npc [[Kalogeron]]
+#npc 
 
 [[Lady Fortuna|Lady Fortuna]] is the head of House [[Fortuna]].
 
