@@ -1,8 +1,8 @@
 ---
-title:Kain Droskar
+title: Kain Droskar 
 draft: false
 aliases:
 - 
 date:
 ---
-#pc  born in [[Shadush]]
+#pc/apprentice   born in [[Shadush]]
