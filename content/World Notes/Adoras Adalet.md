@@ -10,3 +10,4 @@ date:
 Head of House [[Adalet]], "The council's judge."
 
 ![[Adoras Adalet.png|200]]
+_Art by: Hyein Do_

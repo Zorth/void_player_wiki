@@ -10,3 +10,4 @@ date:
 [[Lady Fortuna|Lady Fortuna]] is the head of House [[Fortuna]].
 
 ![[LadyFortuna.png|500]]
+_art by: Pan Pan_
