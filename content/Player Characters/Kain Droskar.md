@@ -6,6 +6,7 @@ aliases:
 date:
 ---
 #pc/apprentice 
+
 Born on the [[Shadush|sun-scorched outskirts of Shadush]], where the dunes whisper in orcish and the wind remembers old wars, Kain Dorskar came into the world marked by storm. A half-orc of the desert’s edge, his first cry was met not by silence but by thunder — a sky-dragon’s blessing coursing through his blood.
 
 Wielding a greatsword that hums with the echo of lightning, Kain walks the path of the draconic instinct, a barbarian whose rage crackles like stormfire and whose heart beats with fierce, untamed loyalty. Cast out by those who saw only what he was not, he learned early that strength means little without someone to protect.
