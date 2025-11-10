@@ -13,6 +13,12 @@ The underbelly is divided into layers, each venturing deeper into the ground. Th
 
 The 1st layer is ruled by 2 lords. The 2nd layer is much more sinister and filled with undead.
 
-The lords found in the first layer are:
-- [[Ashmodai]]
+## 1st Layer Lords:
+- [[Ashmedai]]
 - [[Zehir]]
+
+## 2nd Layer Lords:
+They deal with the undead.
+- [[Eroc]]
+- [[Dobrall]]
+

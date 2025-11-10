@@ -20,3 +20,15 @@ Kalogeron is the metropolis world ran by Mattis.
 > I will know when you arrive
 
 ![[Kalogeron_LegendMap.png]]
+
+## The Great Houses of Kalogeron
+### The Divine Council
+- [[Lu'an Is]]
+- [[Canción]]
+- [[Prabuddh]]
+- [[Adalet]]
+### The Ruling Body
+- [[Fortuna]]
+- [[Esoteric]]
+- [[Naz]]
+- [[Andreía]]
