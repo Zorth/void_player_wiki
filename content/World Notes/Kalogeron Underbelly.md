@@ -12,3 +12,7 @@ date:
 The underbelly is divided into layers, each venturing deeper into the ground. The first is entered through specific points in the city.
 
 The 1st layer is ruled by 2 lords. The 2nd layer is much more sinister and filled with undead.
+
+The lords found in the first layer are:
+- [[Ashmodai]]
+- [[Zehir]]
