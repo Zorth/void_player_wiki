@@ -9,4 +9,4 @@ date:
 
 Lord of house [[Ebrius]]
 
-![[Lazar Ebrius.png]]
+![[Lazar Ebrius.png|300]]

@@ -9,4 +9,4 @@ date:
 
 Head of house [[Kaevorin]]
 
-![[Mary Kaevorin.png]]
+![[Mary Kaevorin.png|300]]
