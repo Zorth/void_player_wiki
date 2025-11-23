@@ -10,6 +10,6 @@ Each [[session]] of [[The Void]] is preceded by a single downtime activity per c
 
 ## Common Downtime Activities:
 
-- [[_Crafting]]
-- [[_LearnSpell]]
-- [[_EarnIncome]]
+- [[_Crafting|Craft an Item]]
+- [[_LearnSpell|Learn a Spell]]
+- [[_EarnIncome|Earn Income]]
