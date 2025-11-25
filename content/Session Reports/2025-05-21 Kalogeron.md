@@ -3,7 +3,7 @@ title:
 draft: false
 aliases:
   - 
-date:
+date: 2025-05-21
 ---
 #session [[Kalogeron]]
 # Layer Action
