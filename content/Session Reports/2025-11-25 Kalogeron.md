@@ -21,3 +21,8 @@ date: 2025-11-25
 
 > Oh, follower of mine, how you have grown. Yet there is always room for improvement, don’t you think? Your devotion to me remains unswayed, and for that, I will offer you the chance to rise above your peers. Prove yourself to me, and I shall reward you with that which you desire.
 
+- Dream sequence, big table featuring [[Ashmedai]]
+- Go to The Wizard tower of Zakhad, find his "personal chambers"
+	- Whacky room layout
+	- Glyph at the entrance that only activates with his ring, get the ring.
+
