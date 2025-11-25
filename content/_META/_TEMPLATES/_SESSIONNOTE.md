@@ -1,5 +1,5 @@
 ---
-title: "{{date}} World"
+title: 
 draft: false
 aliases:
 - 
