@@ -34,3 +34,5 @@ The city-state serves as a connection point between [[Wethrun]] and [[Elaor]]
 - [[Naz]]
 - [[Andreía]]
 - [[Ebrius]]
+
+![[Kalogeron_CoatOfArms.png]]
