@@ -26,11 +26,11 @@ date: 2025-11-05
 - [[Ebrius]] claims the order is too big
 	- -> turns out they suspect [[Esoteric]] of doing magical experiments without declaring it to the council.
 - The party talked to [[Maxwell Foxwell]] (House [[Foxwell]] is a vassal house of [[Esoteric]])
-	- House [[Flanel]] (another vassal house of [[Esoteric]]) seems to have ordered a *lot* of magic components.
+	- House [[Flamell]] (another vassal house of [[Esoteric]]) seems to have ordered a *lot* of magic components.
 - The party talked to heads of the houses [[Kaevorin]], [[Vaynar]], and [[Ebrius]]
 	- They think House [[Esoteric]] is planning to continue the [[Rune Project]].
 - The party talked to House [[Naz]].
-	- House [[Flanel]] and [[Esoteric]] are virtually impossible to talk to.
+	- House [[Flamell]] and [[Esoteric]] are virtually impossible to talk to.
 	- The ingredients line up with the [[Rune Project]].
 - The party reported back to [[Lady Fortuna]] and [[Adoras Adalet]]
 - -> The Council will take action accordingly and require the House [[Esoteric]] to report on the nature of their order
