@@ -8,6 +8,7 @@ date:
 #world
 
 Kalogeron is the metropolis world ran by Mattis.
+The city-state serves as a connection point between [[Wethrun]] and [[Elaor]]
 
 # Kalogeron, Metropolis of the Divine
 > [!Quote] [[Fur Naz|Scribe Fur]], House [[Naz]]
