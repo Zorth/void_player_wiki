@@ -1,4 +1,12 @@
-#pc/apprentice
+---
+title:
+description: "The Dragonfruit wizard, Sir Pitaya of the Ancient Lands"
+draft: false
+aliases:
+  - 
+date:
+---
+#pc/journeyman 
 
 **ORIGIN:** [[Spiritwoods]], [[Sythian]]
 
