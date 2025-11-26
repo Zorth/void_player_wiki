@@ -26,7 +26,7 @@ date: 2025-11-25
 
 - Dream sequence, big table featuring [[Ashmedai]]
 - Go to The [[Wizard tower of Zakhad]], find his "personal chambers"
-	- Whacky room layout
+	- Rooms dont connect normally. going back trough a door you went trough does not mean you will be back in the original room.
 	- Glyph at the entrance that only activates with his ring, get the ring.
 - Went through a fairly non-linear room structure
 	- 4 doors with glyphs
@@ -38,7 +38,7 @@ date: 2025-11-25
 		- Ambushed by Ghosts 
 	- Sewers with glowy magic residue
 	- Cosy Magic Living room with trapdoor
-	- Domed room with large magical clockwork mechanism that is pumping magical fluid
+	- Domed room with large magical clockwork mechanism that is pumping magical fluid. Powers a golem 'forever' meaning the golem cant die unless this mechanism is turned off.
 	- (going back) Big hallway with pillars and a large door guarded by the same **big golem**
 		- Combat (killed the big golem, **Alluum defender**), had magic resistence to everything.
 	- cozy bedroom (goal) with:
@@ -46,6 +46,8 @@ date: 2025-11-25
 		- grimoire, very old and hasn't been touched in a looong while. (sentient?)
 		- [[Zakhad]] was obsessed with obtaining divinity, most things here are in [[Empyrean]]
 		- Talisman, creates rifts in dimensions?
+>[Explored route]
+>Forwards in the starting room. then left at the 4 doors to the 'art alleyway'. then kept going forwards until end of dungeon.
 
 > [!Warning]
 > Disable the heart room next time you see it so the golem doesn't respawn.
