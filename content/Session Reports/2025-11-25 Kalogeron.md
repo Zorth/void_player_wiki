@@ -46,7 +46,8 @@ date: 2025-11-25
 		- grimoire, very old and hasn't been touched in a looong while. (sentient?)
 		- [[Zakhad]] was obsessed with obtaining divinity, most things here are in [[Empyrean]]
 		- Talisman, creates rifts in dimensions?
->[Explored route]
+
+>[!info] Explored route
 >Forwards in the starting room. then left at the 4 doors to the 'art alleyway'. then kept going forwards until end of dungeon.
 
 > [!Warning]
