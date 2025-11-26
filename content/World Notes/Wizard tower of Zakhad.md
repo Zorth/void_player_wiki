@@ -22,7 +22,7 @@ flowchart TB
 	n0 -- right --> n3.0
 	n0 -- back --> n4.0
 	
-	n1.0["n1.0<br>Busts of the EoU<br>(4 Doors + back, small planar tear)"]
+	n1.0{"n1.0<br>Busts of the EoU<br>(4 Doors + back, small planar tear)"}
 	n1.0 -- Door 1 (most left) --> n1.1a
 	n1.0 -- Door 2 --> n1.2
 	n1.0 -- Door 3 --> n1.3
