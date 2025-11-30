@@ -13,6 +13,9 @@ The underbelly is divided into layers, each venturing deeper into the ground. Th
 
 The 1st layer is ruled by 2 lords. The 2nd layer is much more sinister and filled with undead.
 
+> [!info]
+> Entry through [[Hog's Head]] pub
+
 ## 1st Layer Lords:
 - [[Ashmedai]]
 - [[Zehir]]
