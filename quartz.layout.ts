@@ -73,7 +73,7 @@ export const defaultContentPageLayout: PageLayout = {
         }),
         Component.DesktopOnly(Component.TableOfContents()),
         Component.Backlinks(),
-        Component.RecentNotes({ title: "Recent notes", limit: 3, showTags: false })
+        Component.RecentNotes({ title: "Recent notes", limit: 5, showTags: false })
     ],
 }
 
