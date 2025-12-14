@@ -1,4 +1,4 @@
-#pc/apprentice
+#pc/journeyman 
 
 Origin: [[Spiritwoods]] [[Sythian]]
 🍄✨ BRAMBLE THE MUSHROOM LESHY !✨🍄 Certified Crunchy Dirt Child™ | Buff Baby of the Spores | Emotionally available FUNGUS “
