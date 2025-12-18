@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.tags.contains("pc")
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - level
+    sort:
+      - property: level
+        direction: DESC

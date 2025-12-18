@@ -1,9 +1,10 @@
 ---
-title: Kain Droskar 
+title: Kain Droskar
 draft: false
 aliases:
-- 
+  - 
 date:
+level: "7"
 ---
 #pc/apprentice 
 

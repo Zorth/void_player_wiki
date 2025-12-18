@@ -1,3 +1,11 @@
+---
+title:
+draft: false
+aliases:
+  - 
+date:
+level: "8"
+---
 #pc/journeyman 
 
 Origin: [[Spiritwoods]] [[Sythian]]

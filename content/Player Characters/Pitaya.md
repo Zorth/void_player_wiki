@@ -1,13 +1,13 @@
 ---
 title:
-description: "The Dragonfruit wizard, Sir Pitaya of the Ancient Lands"
+description: The Dragonfruit wizard, Sir Pitaya of the Ancient Lands
 draft: false
 aliases:
   - 
 date:
+level: "7"
 ---
 #pc/journeyman 
-
 **ORIGIN:** [[Spiritwoods]], [[Sythian]]
 
 > [!Abstract]
