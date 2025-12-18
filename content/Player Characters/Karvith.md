@@ -4,6 +4,7 @@ draft: false
 aliases:
   - 
 date:
-level:
+level: 5
+image:
 ---
 #pc/apprentice 

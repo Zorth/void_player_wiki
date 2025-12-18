@@ -4,9 +4,7 @@ draft: false
 aliases:
   - 
 date:
-level: 7
-image: Klavik Irelok.png
+level: 1
+image:
 ---
 #pc/apprentice 
-
-![[Klavik Irelok.png]]

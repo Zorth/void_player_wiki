@@ -5,8 +5,22 @@ views:
   - type: table
     name: Table
     order:
+      - level
+      - file.name
+    sort:
+      - property: level
+        direction: DESC
+    columnSize:
+      note.level: 49
+  - type: cards
+    name: Cards
+    groupBy:
+      property: file.tags
+      direction: DESC
+    order:
       - file.name
       - level
     sort:
       - property: level
         direction: DESC
+    image: note.image

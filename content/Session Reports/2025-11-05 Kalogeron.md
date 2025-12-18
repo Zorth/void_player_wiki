@@ -15,7 +15,7 @@ date: 2025-11-05
 - [[Pitaya]]
 - [[Klavik Irelok]]
 - [[Kain Droskar]]
-- [[Mona Windsong]]
+- [[Mona]]
 - [[Bramble]]
 
 ## Notes

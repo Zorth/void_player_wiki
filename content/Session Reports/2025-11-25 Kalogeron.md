@@ -18,7 +18,7 @@ date: 2025-11-25
 - [[Kain Droskar]]
 - [[Klavik Irelok]]
 - [[Bramble]]
-- [[Mona Windsong]]
+- [[Mona]]
 
 ## Notes
 

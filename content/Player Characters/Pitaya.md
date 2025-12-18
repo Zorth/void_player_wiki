@@ -5,7 +5,8 @@ draft: false
 aliases:
   - 
 date:
-level: "7"
+level: 7
+image: Pitaya.png
 ---
 #pc/journeyman 
 **ORIGIN:** [[Spiritwoods]], [[Sythian]]

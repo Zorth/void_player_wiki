@@ -4,7 +4,8 @@ draft: false
 aliases:
   - 
 date:
-level: "7"
+level: 7
+image: RiverPoppy.png
 ---
 #pc/apprentice 
 

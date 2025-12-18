@@ -4,7 +4,8 @@ draft: false
 aliases:
   - 
 date:
-level: "8"
+level: 8
+image: Bramble.png
 ---
 #pc/journeyman 
 
