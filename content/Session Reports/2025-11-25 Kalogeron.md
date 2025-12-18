@@ -8,7 +8,7 @@ date: 2025-11-25
 #session [[Kalogeron]]
 
 # Quid Pro Quo: Wish of Wisdom
-[[Pitaya]]'s [[journeyman]] quest[^1]
+[[Pitaya]]'s [[Journeyman Exam]] quest[^1]
 
 > [!abstract]
 > Following a dream from [[Ashmedai]], the party explored the non-linear [[Wizard tower of Zakhad]] to find his personal chambers. After navigating various rooms and defeating a powerful golem, the [[Alluum defender]], they reached their goal. Inside, they found the required ring, a sentient grimoire, and a talisman, uncovering [[Zakhad]]'s obsession with obtaining divinity.
