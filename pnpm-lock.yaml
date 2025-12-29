@@ -90,11 +90,11 @@ importers:
         specifier: ^8.14.3
         version: 8.14.3
       preact:
-        specifier: ^10.28.0
-        version: 10.28.0
+        specifier: ^10.28.1
+        version: 10.28.1
       preact-render-to-string:
         specifier: ^6.6.4
-        version: 6.6.4(preact@10.28.0)
+        version: 6.6.4(preact@10.28.1)
       pretty-bytes:
         specifier: ^7.1.0
         version: 7.1.0
@@ -1972,8 +1972,8 @@ packages:
     peerDependencies:
       preact: '>=10 || >= 11.0.0-0'
 
-  preact@10.28.0:
-    resolution: {integrity: sha512-rytDAoiXr3+t6OIP3WGlDd0ouCUG1iCWzkcY3++Nreuoi17y6T5i/zRhe6uYfoVcxq6YU+sBtJouuRDsq8vvqA==}
+  preact@10.28.1:
+    resolution: {integrity: sha512-u1/ixq/lVQI0CakKNvLDEcW5zfCjUQfZdK9qqWuIJtsezuyG6pk9TWj75GMuI/EzRSZB/VAE43sNWWZfiy8psw==}
 
   prettier@3.7.4:
     resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
@@ -4344,11 +4344,11 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  preact-render-to-string@6.6.4(preact@10.28.0):
+  preact-render-to-string@6.6.4(preact@10.28.1):
     dependencies:
-      preact: 10.28.0
+      preact: 10.28.1
 
-  preact@10.28.0: {}
+  preact@10.28.1: {}
 
   prettier@3.7.4: {}
 
