@@ -2,16 +2,6 @@ filters:
   and:
     - file.tags.contains("pc")
 views:
-  - type: table
-    name: Table
-    order:
-      - level
-      - file.name
-    sort:
-      - property: level
-        direction: DESC
-    columnSize:
-      note.level: 49
   - type: cards
     name: Cards
     groupBy:
@@ -24,3 +14,13 @@ views:
       - property: level
         direction: DESC
     image: note.image
+  - type: table
+    name: Table
+    order:
+      - level
+      - file.name
+    sort:
+      - property: level
+        direction: DESC
+    columnSize:
+      note.level: 49
