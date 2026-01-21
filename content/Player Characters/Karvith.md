@@ -4,7 +4,8 @@ draft: false
 aliases:
   - 
 date:
-level: 5
+level: 6
 image:
 ---
 #pc/apprentice 
+**ORIGIN:** [[Kalogeron]], Prison

@@ -4,7 +4,7 @@ draft: false
 aliases:
   - 
 date:
-level: 7
+level: 8
 image: Klavik Irelok.png
 ---
 #pc/apprentice 
