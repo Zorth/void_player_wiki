@@ -9,6 +9,7 @@ date: 2026-01-21
 # [[Wizard tower of Zakhad]] II
 
 > [!abstract]
+> The main goal of the exploration was mapping the [[Wizard tower of Zakhad]], and the party acquired information and books. They discovered that [[Zakhad]], an old wizard obsessed with divinity, captured a great elemental and a monitor of the gods, which was originally in service of the god of magic. Zakhad is described as an old man in fancy, rune-engraved robes, with coins over his eyes and pushed-back lips.
 
 ## [[pc|Player Character]]s
 - [[Bramble]]
@@ -65,4 +66,32 @@ date: 2026-01-21
 	- Doors left, right
 - -> left
 	- [[Alluum defender]] golem workshop
-	
+	- missing a heart, could be modified to be friendly.
+- -> backwards
+	- Kitchen
+- -> right
+	- Elemental room
+- -> Laboratory
+- -> Straight
+	- creature, ball of feathers, 2 horns, 4 arms
+		- Something of divine origin, monitors the gods used to have.
+		- projected a vision of a man with coins for eyes in pristine clothes and robes with ancient glyphs. and then brainshocked [[Pitaya]] with memories of it's capture.
+		- tied to the god of magic
+	- absolutely massive, covers the horizon
+	- Doors, backwards
+- -> backwards
+	- personal chambers
+	- a play: "The last betrayal was the first", satire, dated around end of [[Era of Unity|EoU]]
+	- the 100 names of order, praises stability hierarchy and divine law
+	- records of the pantheonic conclave vol. 3, comments on the divine council/kalogeron, these are also available if you have high enough clearance on the council.
+		- Written fairly recently after the [[Tyrannical War]] to setup laws around the divine, sacred texts, etc. to prevent another war of the same scale.
+- -> ring back to the entrance.
+	- Another rune has lit up (right) which lead to the elemental room
+- -> fast travel to the fire elemental
+	- talked the fire elemental
+	- likes the master
+	- merges with smaller elementals.
+
+### post dungeon
+- Talked to [[Ashmedai]]
+	- Gave him the Records of the Pantheonic conclave vol. 3

@@ -18,8 +18,10 @@ flowchart TB
 
 	n0{"n0<br>Starting Room<br>(4 Doors)"}
 	n0 -- Straight --> n1.0
+	n0 -- Straight<br>Ring fast travel --> n1.1g
 	n0 <-- Left<br>(no rune) --> n2a
 	n0 -- right --> n3.0
+	n0 -- right<br>Ring fast travel --> n1.5a
 	n0 -- back --> n4.0
 	
 	n1.0{"n1.0<br>Busts of the EoU<br>(4 Doors + back, <s>small planar tear</s>)"}
@@ -35,6 +37,8 @@ flowchart TB
 	n1.5b.0 -- left --> n1.5b.1a
 	n1.5b.0 --o n2a
 	n1.5b.0 -- straight --> n1.5b.2
+	n1.5b.2["n1.5b.2<br>Divine Monitor Room"]
+	n1.5b.2 --o n1.1g
 	n1.5b.1a["n1.5b.1a<br>Enhanced Gravity Room"] 
 	n1.5b.1a --> n1.5b.1b.0
 	n1.5b.1b.0["n1.5b.1b.0<br>Mirror flats"]
@@ -43,6 +47,7 @@ flowchart TB
 
 	n1.1a["n1.1a<br>Aluum Golem Workshop"]
 	n1.1a --> n1.1b
+	n1.1a --o n3.0
 	n1.1b["n1.1b<br>Mirror maze<br>! Expect combat"]
 	n1.1b --> n1.1c
 	n1.1c["n1.1c<br>Magic Sewers"]
@@ -60,7 +65,7 @@ flowchart TB
 
 	n3.0{n3.0<br>Kitchen room}
 	n3.0 -- Door 1 (most left) --> n1.5b.0
-	n3.0 -- Door 2 --> n3.2
+	n3.0 -- Door 2 --> n1.5a
 	
 	n4.0[n4.0<br>???]
 
