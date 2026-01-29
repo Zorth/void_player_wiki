@@ -7,7 +7,7 @@ date:
 level: 8
 image: Kain Droskar.png
 ---
-#pc/apprentice 
+#pc/journeyman 
 
 Born on the [[Shadush|sun-scorched outskirts of Shadush]], where the dunes whisper in orcish and the wind remembers old wars, Kain Dorskar came into the world marked by storm. A half-orc of the desert’s edge, his first cry was met not by silence but by thunder — a sky-dragon’s blessing coursing through his blood.
 

@@ -19,6 +19,7 @@ views:
     order:
       - level
       - file.name
+      - file.tags
     sort:
       - property: level
         direction: DESC
