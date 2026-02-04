@@ -1,4 +1,15 @@
+---
+title:
+draft: false
+aliases:
+  - 
+date: 2026-02-03
+---
+#session [[Kalogeron]]
+
 # Houses of Kalogeron Study
+
+> [!abstract]
 [[Pitaya]] has requested the new recruits within [[The Void]] to help out getting info on Kalogeron and the Houses.
 
 ## Player Characters
