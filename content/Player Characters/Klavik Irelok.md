@@ -7,7 +7,7 @@ date:
 level: 8
 image: Klavik Irelok.png
 ---
-#pc/apprentice 
+#pc/journeyman 
 Klavik is a weathered but willing artisan locksmith, fascinated by intricate locking mechanisms and the art of smaller mechanical or magical designs. It took him a while to realize that crafting massive orcish weaponry and armor just wasn’t his calling. 
 
 Originating from [[Sythian]] - [[Boverland]], Klavik got recruited to the [[Veiled Claw]], a thieves guild operating in the region. A youngster used for his obsessions to help out with minor crimes, he got deeper and deeper within the organization. 
@@ -20,3 +20,10 @@ Finally out, Klavik has put his skills for the better. A better life, but whenev
 
 ![[Klavik Irelok.png]]
 
+![[KlavikChart.png]]
+
+## Klavik's Journeyman Home:
+A nice and pleasant workshop and living quarter combined. They usually say to split your work station and bed far apart but Klavik does not care.
+It's a bit chaotic and cluttered, but when looking a bit deeper there is order to the chaos to be found.
+
+Besides all the locks, magical and mechanical contraptions, it seems Klavik has invested into his own cooking station and started out baking his own (attempt at) artisanal bread within the Void.
