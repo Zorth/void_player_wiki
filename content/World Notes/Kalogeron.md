@@ -15,6 +15,7 @@ date:
 > 	- This plot point can be found in [[Kalogeron Underbelly]] layer 2 (I think), level range ~3-6
 > - The [[Wizard tower of Zakhad]]
 > 	- Megadungeon, level range 7+
+> 	- Level 2 TBD
 
 Kalogeron is the metropolis world ran by Mattis.
 The city-state serves as a connection point between [[Wethrun]] and [[Elaor]]
