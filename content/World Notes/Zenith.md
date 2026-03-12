@@ -24,3 +24,6 @@ Zenith is the continent world ran by Hubbe.
 - [[Eldoria|Kingdom of Eldoria]]
 - [[Satsuma|Satsuma Shogunate]]
 - [[Foglands]]
+
+![[Deities of Zenith]]
+
