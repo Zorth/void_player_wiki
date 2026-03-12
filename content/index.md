@@ -14,7 +14,19 @@ This is run and maintained by players. So keep in mind not all information may b
 
 Are you new to [[The Void]]? Or looking around on how to get started? Take a look at [[_getting_started|Getting Started]]!
 
-If you want to help the wiki and submit your own notes and content, have a look at [[_contributing|Contributing to the wiki]]. Make sure to follow the rules set within the [[_guidelines|Wiki Guidelines]].
+## Core Guidelines & Rules
+
+- [[_guidelines|Wiki Guidelines]]
+- [[_campaign_guidelines|Campaign Guidelines]]
+- [[_session_reports|Session Reports]]
+- [[_XP|XP Progression]]
+- [[_treasure|Treasure & Loot]]
+- [[_death|Death & Resurrection]]
+- [[_ancestryexemptions|Ancestry & Heritage Rules]]
+- [[_ranks|Guild Ranks]]
+- [[_gming|Voidmaster (GM) Guide]]
+
+---
 
 # Worlds
 

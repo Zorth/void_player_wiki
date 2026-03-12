@@ -16,7 +16,7 @@ You start here. Anybody that has signed up to the guild, has received their void
 
 ## Journeyman
 
-Once you've achieved **level 7**, your character is eligible for their **Journeyman Rank Quest**. One of the Voidmasters will be appointed to run the quest, so if you don't know who yet, ask us!
+Once you've achieved **level 7**, your character is eligible for their **[[Journeyman Exam|Journeyman Rank Quest]]**. One of the [[_gming|Voidmasters]] will be appointed to run the quest, so if you don't know who yet, ask us!
 Once you've completed your quest, you acquire the **Journeyman Rank** within the Guild of the Void, and are entitled to the following benefits:
 
 ### Journeyman Benefits
@@ -30,7 +30,7 @@ Once you've completed your quest, you acquire the **Journeyman Rank** within the
 
 ## Guildmaster
 
-Once you've achieved **level 14**, and obtained your **Journeyman Rank**, your character is eligible for their **Guildmaster Rank Quest**. Completing this quest will earn you the **Guildmaster Rank** within the Guild of the void, and are entitled to the following benefits:
+Once you've achieved **level 14**, and obtained your **Journeyman Rank**, your character is eligible for their **[[Master Exam|Guildmaster Rank Quest]]**. Completing this quest will earn you the **Guildmaster Rank** within the Guild of the void, and are entitled to the following benefits:
 
 ### Guildmaster Benefits
 

@@ -12,4 +12,4 @@ date:
 
 Sythian is the world ran by Jasper.
 
-See [[_Hexploration_Sythian|Sythian's Hexploration Rules]]
+See [[_hexploration_sythian|Sythian's Hexploration Rules]]

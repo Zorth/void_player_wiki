@@ -1,8 +1,8 @@
 ---
-title: Guidelines
+title: Wiki Guidelines
 draft: false
 aliases:
-  - Wiki Guidelines
+  -
 date:
 ---
 

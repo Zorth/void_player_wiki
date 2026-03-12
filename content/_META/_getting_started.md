@@ -6,16 +6,49 @@ aliases:
 date:
 ---
 
-## Character Creation Rules
+> [!abstract] 
+> The Void is a **Living World, Persistent Campaign**. It is a shared world run by multiple game masters (called @Voidmasters). Your character will continue to exist across different worlds, gathering loot and experience along the way.
 
-- If you don't know how to create a character, you can ask the @Voidmasters or fellow players for help. As well as consult the archives of Nethys, yt tutorials, etc.
-- You may only use [**Common**](https://2e.aonprd.com/Traits.aspx?ID=557) choices during your character creation. If you see something [**Uncommon**](https://2e.aonprd.com/Traits.aspx?ID=721) (maybe even [**Rare**](https://2e.aonprd.com/Traits.aspx?ID=683)), **you must consult the @Voidmasters, if you're allowed to select it**. No [PFS Limited or Restricted](https://2e.aonprd.com/PFS.aspx) allowed
-- We use PF2e **Remastered**. Outdated CRB and APG is not allowed. Battlezoo is not allowed. No Legacy Flaws, No alternate boosts, etc.
-  - Ask the @Voidmaster s to be allowed certain selections like Adventure Paths
-- Use [PathBuilder](https://pathbuilder2e.com) to create it (and import it into Foundry) and reference your sheet during sessions.
-  - Tap "Get started" after creating a new character to quickly get setup correctly.
-  - On IOS you can use [pf2 tools](https://character.pf2.tools) to manage your sheet.
-- Your character sheet **must be (!)** on the [**_Foundry_**](http://vtt.tarragon.be)
-- Your character **must** want to be there, want to go on adventures, and be a team player :people_holding_hands: You're all part of the same organization after all.
-- We use XP for character advancement, this will be handed out at the end of each session. (Starting at level 1)
-- We expect you to know your own character. @Voidmasters are not responsible for knowing how your PC works.
+## How to Get Started
+
+1. **Choose Your System**: We support both **Pathfinder 2nd Edition** and **Dungeons & Dragons 2024**. They are separate systems with separate characters, but the story and world are intertwined.
+2. **Create Your Character**: Follow the system-specific rules below.
+3. **Register**: Get registered on the **Guild** website (https://guild.tarragon.be) by a @Voidmaster.
+4. **Join a Session**: Sign up for sessions in the `#🤝lfg` channel on Discord and the Session on the [**Guild**]( https://guild.tarragon.be/ )
+
+---
+
+## Pathfinder 2e Rules
+
+- **Access**: Ask a @Voidmaster for access to the **Foundry VTT**.
+- **Version**: We use **PF2e Remastered**. Outdated CRB/APG and Battlezoo are not allowed. No Legacy Flaws or alternate boosts.
+- **Choices**: Use **Common** choices only. Uncommon or Rare choices require @Voidmaster approval. No PFS Limited/Restricted.
+- **Tools**: [PathBuilder](https://pathbuilder2e.com) is recommended for creation. Character sheet import into Foundry is optional.
+- **Progression**: XP-based (Starting at Level 1). See [[_XP|XP Table]].
+
+## Dungeons & Dragons Rules
+
+- **Access**: Ask a @Voidmaster for a D&DBeyond campaign invite.
+- **Version**: Updated **2024 rules**. 2014 characters are allowed but must use 2024 spells, feats, and weapon properties.
+- **Creation**:
+  - **Level 3** start.
+  - **Point Buy** for stats.
+  - **Free Feat** at start (no Ability Score Increase feats).
+  - Ability scores increase by +2/+1 or +1/+1/+1 (regardless of race/background).
+- **Blacklist**: All Homebrew, UA, Adventure content, Partnered Content, and Strixhaven are disallowed.
+- **Progression**: XP-based (see [[_XP|XP Progression]]).
+
+---
+
+## General Rules
+
+- **Team Player**: Your character must want to be there, go on adventures, and be a team player. You are all part of the same organization.
+- **Self-Sufficiency**: You are responsible for knowing how your character works.
+- **Loot & Items**: Buy items between sessions. Loot and XP are awarded at the end of sessions.
+- **Session Reports**: 
+  - **Wiki**: Objective, information-dense, bullet-listed reports (grants rewards).
+  - **Discord**: In-character, story-like, long-form narratives.
+  - See [[_session_reports|Session Report Guidelines]] for details.
+- **Multiple Characters**: Having multiple characters is allowed! This is useful if you want to try different classes or need a lower-level character for specific quests.
+  - **Non-Transferable**: XP and items are bound to the character and cannot be transferred.
+  - **Backup**: It is always a good idea to have a backup character ready in case of death!
