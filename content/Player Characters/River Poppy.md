@@ -7,7 +7,7 @@ date:
 level: 8
 image: RiverPoppy.png
 ---
-#pc/apprentice 
+#pc/journeyman  
 
 **ORIGINE:** [[Spiritwoods]], [[Sythian]]
 
