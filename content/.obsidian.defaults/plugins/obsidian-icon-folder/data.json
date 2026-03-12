@@ -5,12 +5,7 @@
     "fontSize": 16,
     "emojiStyle": "native",
     "iconColor": null,
-    "recentlyUsedIcons": [
-      "LiGlobe2",
-      "LiHash",
-      "LiHistory",
-      "LiPersonStanding"
-    ],
+    "recentlyUsedIcons": ["LiGlobe2", "LiHash", "LiHistory", "LiPersonStanding"],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {

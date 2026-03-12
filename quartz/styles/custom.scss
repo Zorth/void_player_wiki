@@ -62,12 +62,21 @@ body {
 }
 
 // Apply to common Quartz components
-.popover, .card, .search-container, .popover > .popover-inner, .sidebar {
+.popover,
+.card,
+.search-container,
+.popover > .popover-inner,
+.sidebar {
   border-radius: var(--radius);
 }
 
 // Header styling for a more "guild" feel
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Gin", "0xProto", serif;
   letter-spacing: -0.02em;
 }

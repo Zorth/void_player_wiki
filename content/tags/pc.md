@@ -2,7 +2,7 @@
 title: pc
 draft: false
 aliases:
-- "#pc"
+  - "#pc"
 date:
 ---
 

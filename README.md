@@ -1,4 +1,3 @@
-
 # Setting up Obsidian.md
 
 Clone the repo using github.
@@ -14,4 +13,3 @@ Use git, lazygit, or the git plugin (in obsidian) to push changes to v4, they wi
 ALWAYS `git pull --rebase` before pushing, preferably before editing.
 
 This can be defaulted with `git config pull.rebase true` (optionally with `--global` if you want it everywhere).
-

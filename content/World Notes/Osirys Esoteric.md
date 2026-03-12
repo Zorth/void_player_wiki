@@ -5,6 +5,7 @@ aliases:
   - Lord Esoteric
 date:
 ---
+
 #npc [[Kalogeron]]
 
 leader of House [[Esoteric]]

@@ -5,6 +5,7 @@ aliases:
   - King of Thieves
 date:
 ---
+
 #npc [[Kalogeron]]
 
 One of the lords of the first layer of the [[Kalogeron Underbelly]].

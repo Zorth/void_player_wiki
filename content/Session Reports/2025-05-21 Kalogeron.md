@@ -1,18 +1,22 @@
 ---
-title: 
+title:
 draft: false
 aliases:
-  - 
+  -
 date: 2025-05-21
 ---
+
 #session [[Kalogeron]]
+
 # Layer Action
 
 > [!abstract]
 > Party went into the second layer of the [[Kalogeron Underbelly]] and fought some undead.
+>
 > > [[Gorak]] dies.
 
 ## [[pc|Player Character]]s
+
 - [[Kain Droskar]]
 - [[Menaali Lanternlighter]]
 - [[Torjal]]
@@ -21,6 +25,7 @@ date: 2025-05-21
 - [[Klavik Irelok]]
 
 ## Notes
+
 - party interacts with [[Gus the garbage man]]
 - meet with lord baron [[Ashmedai]]
 - 2nd level is ran by [[Eroc]] and [[Dobrall]] (who deal with undead)

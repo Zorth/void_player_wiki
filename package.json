@@ -34,7 +34,7 @@
   "bin": {
     "quartz": "./quartz/bootstrap-cli.mjs"
   },
-    "dependencies": {
+  "dependencies": {
     "@clack/prompts": "^0.11.0",
     "@floating-ui/dom": "^1.7.4",
     "@myriaddreamin/rehype-typst": "^0.6.0",

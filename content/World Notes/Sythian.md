@@ -2,10 +2,11 @@
 title: Sythian
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
-#world 
+
+#world
 
 ![[Sythian_Logo.svg]]
 

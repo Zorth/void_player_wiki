@@ -2,9 +2,10 @@
 title:
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
+
 #npc [[Kalogeron]]
 
 Trinity works at [[Foxwell's Machinations]].

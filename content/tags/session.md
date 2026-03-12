@@ -2,8 +2,8 @@
 title: session
 draft: false
 aliases:
-- Session Note
-- "#session"
+  - Session Note
+  - "#session"
 date:
 ---
 

@@ -2,7 +2,7 @@
 title: Treasure
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
 
@@ -44,7 +44,9 @@ To easily and fairly divide loot, the "buy back" method is often used by players
 3. "Buy back" the items you want for half item price.
 
 Example:
+
 > For a party of 4 the loot is:
+>
 > - 8 sp (or 0.8 gp)
 > - 1x [Hide Shield](https://2e.aonprd.com/Shields.aspx?ID=11) (worth 2 gp)
 > - 1x [Palstave](https://2e.aonprd.com/Weapons.aspx?ID=506) (worth 4 sp, or 0.4 gp)

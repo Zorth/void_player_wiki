@@ -4,7 +4,7 @@ Aliases:
   - "#world"
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
 

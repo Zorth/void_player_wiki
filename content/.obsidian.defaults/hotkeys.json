@@ -1,9 +1,7 @@
 {
   "darlal-switcher-plus:switcher-plus:open": [
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "O"
     }
   ]

@@ -24,6 +24,8 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 
+import GuildLink from "./GuildLink"
+
 export {
   ArticleTitle,
   Content,
@@ -50,4 +52,5 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  GuildLink,
 }
