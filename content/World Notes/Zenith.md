@@ -1,22 +1,22 @@
 ---
-title:
+title: Zenith
 draft: false
 aliases:
-  - 
+  - home
 date:
 ---
 #world 
 
 Zenith is the continent world ran by Hubbe.
 
-> [!Quote]
-> The world of Zenith is a vast, vibrant land teeming with natural beauty and mystery. Divided into four powerful kingdoms, Zenith boasts diverse landscapes that make it a place of endless wonder and opportunity. From lush, ancient forests and rolling plains to towering mountain ranges and sprawling coastlines, the world is as beautiful as it is dangerous. Rich deposits of natural resources—precious metals, timber, fertile farmland, and bountiful fishing waters—have shaped the prosperity and ambitions of its people.
-> 
-> The four kingdoms share an uneasy coexistence, marked by subtle rivalries and competition. Though open conflict has been rare in recent history, tensions simmer beneath the surface, shaping politics, trade, and alliances. Each kingdom is protective of its own interests, and cooperation is often fleeting, driven by necessity rather than trust. Beyond the cities and borders lies a land of untamed wilderness, ancient ruins, and untold dangers—a constant reminder that Zenith holds secrets and perils far older than the kingdoms themselves.
-> 
-> Zenith is a world of choices. It's up to you what choices you're going to make. 
+Zenith consists of four kingdoms with diverse landscapes, from forests and plains to mountains and coastlines. The world is rich in resources like precious metals, timber, and fertile land, which drive the local economies.
+
+The four kingdoms have an uneasy coexistence. While open war is rare, there are constant rivalries regarding politics, trade, and alliances. Beyond the settled borders are wilderness areas and ancient ruins.
 
 ![[Zenith_worldmap.png]]
+
+## Reputation
+Actions have consequences. Track your standing with various factions on the [Zenith Reputation sheet](https://docs.google.com/spreadsheets/d/1FtBE5lm-pZFa99IE4QpKArfmXcRSk_oXCR7PzP_otK0/edit?usp=drivesdk).
 
 # The States of [[Zenith]]:
 - [[Muris|Kingdom of Muris]]
@@ -26,4 +26,3 @@ Zenith is the continent world ran by Hubbe.
 - [[Foglands]]
 
 ![[Deities of Zenith]]
-
