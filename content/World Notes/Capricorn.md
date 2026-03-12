@@ -19,4 +19,4 @@ date:
 > - Talks slowly.
 > - Art by Alena Kuzminykh.
 
-![[Capricorn.png]]
+![[Capricorn.jpg]]
