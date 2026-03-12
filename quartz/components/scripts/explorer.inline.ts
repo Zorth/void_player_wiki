@@ -1,6 +1,7 @@
 import { FileTrieNode } from "../../util/fileTrie"
 import { FullSlug, resolveRelative, simplifySlug } from "../../util/path"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
+import { removeAllChildren } from "./util"
 
 type MaybeHTMLElement = HTMLElement | undefined
 
@@ -172,9 +173,37 @@ async function setupExplorer(currentSlug: FullSlug) {
       serializedExplorerState.map((entry: FolderState) => [entry.path, entry.collapsed]),
     )
 
+    const filterButton = explorer.querySelector(".explorer-filter-button") as HTMLElement
+    const filterTarget = localStorage.getItem("explorerFilterTarget") as FullSlug | null
+    const filterActive = !!filterTarget
+    if (filterButton) {
+      filterButton.classList.toggle("active", filterActive)
+    }
+
     const data = await fetchData
     const entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
     const trie = FileTrieNode.fromEntries(entries)
+
+    if (filterActive && filterTarget) {
+      const targetSimpleSlug = simplifySlug(filterTarget)
+      const slugsToKeep = new Set<FullSlug>()
+
+      // Find all pages that link to the filter target
+      for (const [slug, details] of entries) {
+        if (details.links.includes(targetSimpleSlug) || slug === filterTarget) {
+          // Keep this slug and all its parents
+          let parts = slug.split("/")
+          while (parts.length > 0) {
+            const path = parts.join("/") as FullSlug
+            slugsToKeep.add(path)
+            slugsToKeep.add((path + "/index") as FullSlug)
+            parts.pop()
+          }
+        }
+      }
+
+      trie.filter((node) => slugsToKeep.has(node.slug))
+    }
 
     // Apply functions in order
     for (const fn of opts.order) {
@@ -197,15 +226,24 @@ async function setupExplorer(currentSlug: FullSlug) {
       const previousState = oldIndex.get(path)
       return {
         path,
-        collapsed:
-          previousState === undefined ? opts.folderDefaultState === "collapsed" : previousState,
+        collapsed: filterActive
+          ? false
+          : previousState === undefined
+            ? opts.folderDefaultState === "collapsed"
+            : previousState,
       }
     })
 
-    const explorerUl = explorer.querySelector(".explorer-ul")
+    const explorerUl = explorer.querySelector(".explorer-ul") as HTMLElement
     if (!explorerUl) continue
 
     // Create and insert new content
+    for (const child of Array.from(explorerUl.children)) {
+      if (!child.classList.contains("overflow-end")) {
+        explorerUl.removeChild(child)
+      }
+    }
+
     const fragment = document.createDocumentFragment()
     for (const child of trie.children) {
       const node = child.isFolder
@@ -215,6 +253,18 @@ async function setupExplorer(currentSlug: FullSlug) {
       fragment.appendChild(node)
     }
     explorerUl.insertBefore(fragment, explorerUl.firstChild)
+
+    if (filterButton) {
+      filterButton.onclick = () => {
+        const currentTarget = localStorage.getItem("explorerFilterTarget")
+        if (currentTarget === currentSlug) {
+          localStorage.removeItem("explorerFilterTarget")
+        } else {
+          localStorage.setItem("explorerFilterTarget", currentSlug)
+        }
+        setupExplorer(currentSlug)
+      }
+    }
 
     // restore explorer scrollTop position if it exists
     const scrollTop = sessionStorage.getItem("explorerScrollTop")

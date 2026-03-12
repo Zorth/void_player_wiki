@@ -90,6 +90,39 @@
   }
 }
 
+.explorer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.explorer-filter-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--lightgray);
+    color: var(--dark);
+  }
+
+  &.active {
+    color: var(--tertiary);
+    background-color: var(--highlight);
+  }
+
+  & .lucide-filter {
+    margin: 0;
+  }
+}
+
 button.mobile-explorer,
 button.desktop-explorer {
   background-color: transparent;
