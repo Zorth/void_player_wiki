@@ -173,16 +173,32 @@ async function setupExplorer(currentSlug: FullSlug) {
       serializedExplorerState.map((entry: FolderState) => [entry.path, entry.collapsed]),
     )
 
-    const filterButton = explorer.querySelector(".explorer-filter-button") as HTMLElement
+    const worldFilter = explorer.querySelector("#explorer-world-filter") as HTMLSelectElement
     const filterTarget = localStorage.getItem("explorerFilterTarget") as FullSlug | null
-    const filterActive = !!filterTarget
-    if (filterButton) {
-      filterButton.classList.toggle("active", filterActive)
-    }
 
     const data = await fetchData
     const entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
+
+    if (worldFilter) {
+      // Populate worlds if not already populated
+      if (worldFilter.options.length <= 1) {
+        const worlds = entries
+          .filter(([_, details]) => details.tags.includes("world"))
+          .map(([slug, details]) => ({ slug, title: details.title }))
+          .sort((a, b) => a.title.localeCompare(b.title))
+
+        for (const world of worlds) {
+          const option = document.createElement("option")
+          option.value = world.slug
+          option.textContent = world.title
+          worldFilter.appendChild(option)
+        }
+      }
+      worldFilter.value = filterTarget ?? ""
+    }
+
     const trie = FileTrieNode.fromEntries(entries)
+    const filterActive = !!filterTarget
 
     if (filterActive && filterTarget) {
       const targetSimpleSlug = simplifySlug(filterTarget)
@@ -254,13 +270,13 @@ async function setupExplorer(currentSlug: FullSlug) {
     }
     explorerUl.insertBefore(fragment, explorerUl.firstChild)
 
-    if (filterButton) {
-      filterButton.onclick = () => {
-        const currentTarget = localStorage.getItem("explorerFilterTarget")
-        if (currentTarget === currentSlug) {
+    if (worldFilter) {
+      worldFilter.onchange = () => {
+        const selectedWorld = worldFilter.value
+        if (selectedWorld === "") {
           localStorage.removeItem("explorerFilterTarget")
         } else {
-          localStorage.setItem("explorerFilterTarget", currentSlug)
+          localStorage.setItem("explorerFilterTarget", selectedWorld)
         }
         setupExplorer(currentSlug)
       }
