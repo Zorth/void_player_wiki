@@ -6,7 +6,7 @@ aliases:
 date:
 ---
 
-#world
+#location/settlement [[Sythian]]
 
 > [!Question] Current Plot Points
 >
@@ -19,8 +19,7 @@ date:
 >   - Megadungeon, level range 7+
 >   - Level 2 TBD
 
-Kalogeron is the metropolis world ran by Mattis.
-The city-state serves as a connection point between [[Wethrun]] and [[Elaor]]
+Kalogeron is the metropolis city-state ran by Mattis. It is located on a land bridge connecting the continents of **[[Wethrun]]** and **[[Elaor]]** on the world of **[[Sythian]]**.
 
 # Kalogeron, Metropolis of the Divine
 
@@ -33,16 +32,22 @@ The city-state serves as a connection point between [[Wethrun]] and [[Elaor]]
 >
 > I will know when you arrive
 
-![[Kalogeron_LegendMap.png]]
+Kalogeron is the oldest city to exist on Sythian, a bustling hub of trade, diverse beliefs, and persistent trouble. Its background allows for diverse character origins, often involving a recruiter from [[The Void]] acceptance test.
+
+## [[Old Pantheon|Deities]]
+
+The city's culture is deeply tied to the [[Old Pantheon]], with many citizens choosing a patron deity to guide their character's path.
 
 ## The Great Houses of Kalogeron
 
-### The Divine Council
+### [[Divine Council]]
 
-- [[Lu'an Is]]
-- [[Canción]]
-- [[Prabuddh]]
-- [[Adalet]]
+The Divine Council is the governing body of the city, comprised of leaders who embody the virtues of their respective deities.
+
+- [[Lu'an Is]] (Matron: [[Charis Lu'an Is]])
+- [[Canción]] (Matron: [[Syriss Canción]])
+- [[Prabuddh]] (Patron: [[Iro Sou Prabuddh]])
+- [[Adalet]] (Leader: [[Adoras Adalet]])
 
 ### The Ruling Body
 
