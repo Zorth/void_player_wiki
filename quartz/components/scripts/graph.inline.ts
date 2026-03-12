@@ -31,6 +31,7 @@ type NodeData = {
   id: SimpleSlug
   text: string
   tags: string[]
+  isUnresolved?: boolean
 } & SimulationNodeDatum
 
 type SimpleLinkData = {
@@ -87,6 +88,9 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     showTags,
     focusOnHover,
     enableRadial,
+    colors,
+    showUnresolved,
+    nodeSize,
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
   const data: Map<SimpleSlug, ContentDetails> = new Map(
@@ -104,7 +108,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const outgoing = details.links ?? []
 
     for (const dest of outgoing) {
-      if (validLinks.has(dest)) {
+      if (validLinks.has(dest) || showUnresolved) {
         links.push({ source: source, target: dest })
       }
     }
@@ -141,14 +145,22 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   } else {
     validLinks.forEach((id) => neighbourhood.add(id))
     if (showTags) tags.forEach((tag) => neighbourhood.add(tag))
+    if (showUnresolved) {
+      links.forEach((l) => {
+        neighbourhood.add(l.source)
+        neighbourhood.add(l.target)
+      })
+    }
   }
 
   const nodes = [...neighbourhood].map((url) => {
+    const isUnresolved = !validLinks.has(url) && !url.startsWith("tags/")
     const text = url.startsWith("tags/") ? "#" + url.substring(5) : (data.get(url)?.title ?? url)
     return {
       id: url,
       text,
       tags: data.get(url)?.tags ?? [],
+      isUnresolved,
     }
   })
   const graphData: { nodes: NodeData[]; links: LinkData[] } = {
@@ -198,7 +210,25 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    }
+
+    if (colors) {
+      for (const [query, color] of Object.entries(colors)) {
+        if (query.startsWith("tag:")) {
+          const tag = query.substring(4)
+          if (d.tags.includes(tag)) {
+            return color
+          }
+        } else if (query.startsWith("path:")) {
+          const path = query.substring(5)
+          if (d.id.startsWith(path)) {
+            return color
+          }
+        }
+      }
+    }
+
+    if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
       return computedStyleMap["--gray"]
@@ -209,7 +239,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const numLinks = graphData.links.filter(
       (l) => l.source.id === d.id || l.target.id === d.id,
     ).length
-    return 2 + Math.sqrt(numLinks)
+    return (2 + Math.sqrt(numLinks)) * (nodeSize ?? 1)
   }
 
   let hoveredNodeId: string | null = null

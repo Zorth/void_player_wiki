@@ -19,6 +19,9 @@ export interface D3Config {
   showTags: boolean
   focusOnHover?: boolean
   enableRadial?: boolean
+  colors?: Record<string, string>
+  showUnresolved?: boolean
+  nodeSize?: number
 }
 
 interface GraphOptions {
@@ -41,6 +44,9 @@ const defaultOptions: GraphOptions = {
     removeTags: [],
     focusOnHover: false,
     enableRadial: false,
+    colors: {},
+    showUnresolved: false,
+    nodeSize: 1,
   },
   globalGraph: {
     drag: true,
@@ -56,6 +62,9 @@ const defaultOptions: GraphOptions = {
     removeTags: [],
     focusOnHover: true,
     enableRadial: true,
+    colors: {},
+    showUnresolved: false,
+    nodeSize: 1,
   },
 }
 
