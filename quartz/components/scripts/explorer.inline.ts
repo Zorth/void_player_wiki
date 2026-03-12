@@ -182,10 +182,15 @@ async function setupExplorer(currentSlug: FullSlug) {
     if (worldFilter) {
       // Populate worlds if not already populated
       if (worldFilter.options.length <= 1) {
-        const worlds = entries
+        let worlds = entries
           .filter(([_, details]) => details.tags.includes("world"))
           .map(([slug, details]) => ({ slug, title: details.title }))
           .sort((a, b) => a.title.localeCompare(b.title))
+
+        const theVoid = entries.find(([_, details]) => details.title === "The Void")
+        if (theVoid && !worlds.some((w) => w.title === "The Void")) {
+          worlds = [{ slug: theVoid[0], title: theVoid[1].title }, ...worlds]
+        }
 
         for (const world of worlds) {
           const option = document.createElement("option")

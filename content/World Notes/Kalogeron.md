@@ -6,7 +6,7 @@ aliases:
 date:
 ---
 
-#location/settlement [[Sythian]]
+#world #location/settlement 
 
 > [!Question] Current Plot Points
 >
