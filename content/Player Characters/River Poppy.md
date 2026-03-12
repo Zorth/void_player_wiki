@@ -4,10 +4,10 @@ draft: false
 aliases:
   - 
 date:
-level: 8
+level: 9
 image: RiverPoppy.png
 ---
-#pc/apprentice 
+#pc/journeyman 
 
 **ORIGINE:** [[Spiritwoods]], [[Sythian]]
 
