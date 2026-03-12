@@ -22,4 +22,4 @@ date:
 > - Origin unknown.
 > - Art by: Edward Barons.
 
-![[Baldr.png]]
+![[Baldr.jpg]]
