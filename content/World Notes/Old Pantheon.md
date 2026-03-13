@@ -28,3 +28,4 @@ The **Old Pantheon** is the collection of deities worshipped within the city-sta
 | **Arcane Eye**             | Magic, Knowledge, Protection, Destruction   |
 | **Mother of Souls**        | Death, Healing, Repose, Water               |
 | **Mother Seas/Father Sky** | Weather, Seas, Animals, Air                 |
+
