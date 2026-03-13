@@ -6,8 +6,7 @@ aliases:
   - The Old Pantheon
 date:
 ---
-
-#world [[Kalogeron]]
+ [Kalogeron]]
 
 The **Old Pantheon** is the collection of deities worshipped within the city-state of [[Kalogeron]]. Many of the [[Divine Council|Great Houses]] are associated with or even embody the traits and domains of these gods.
 

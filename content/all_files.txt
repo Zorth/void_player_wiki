@@ -1,0 +1,147 @@
+GEMINI
+index
+_META/_ancestryexemptions
+_META/_callouts
+_META/_campaign_guidelines
+_META/_contributing
+_META/_crafting
+_META/_death
+_META/_downtime
+_META/_earnincome
+_META/_getting_started
+_META/_gming
+_META/_guidelines
+_META/_hexploration_sythian
+_META/_learnspell
+_META/_ranks
+_META/_session_reports
+_META/_TEMPLATES/_NEWNOTE
+_META/_TEMPLATES/_SESSIONNOTE
+_META/_treasure
+_META/_XP
+Player Characters/Bramble
+Player Characters/Dalia Nines
+Player Characters/David Vritz
+Player Characters/Gob Goblin
+Player Characters/Kain Droskar
+Player Characters/Karvith
+Player Characters/Klavik Irelok
+Player Characters/Lhothrash Silnareon
+Player Characters/Mona
+Player Characters/Pitaya
+Player Characters/Renkar
+Player Characters/River Poppy
+Player Characters/Scully of the Tribe of Wug
+Player Characters/Selvarin Amar
+Session Reports/2025-05-21 Kalogeron
+Session Reports/2025-11-05 Kalogeron
+Session Reports/2025-11-11 Verninthal
+Session Reports/2025-11-25 Kalogeron
+Session Reports/2025-11-27 Zenith
+Session Reports/2025-12-11 Sythian
+Session Reports/2026-01-21 Kalogeron
+Session Reports/2026-02-03 Kalogeron
+Session Reports/2026-02-26 Zenith
+Session Reports/2026-03-11 Verninthal
+tags/event
+tags/location
+tags/location/settlement
+tags/npc
+tags/organization
+tags/pc
+tags/pc/apprentice
+tags/pc/journeyman
+tags/pc/master
+tags/session
+tags/species
+tags/world
+World Notes/Adalet
+World Notes/Adoras Adalet
+World Notes/Alaric Silverleaf
+World Notes/Ashmedai
+World Notes/Asnyri
+World Notes/Baldr
+World Notes/Barthalemuw
+World Notes/Black Void
+World Notes/Canción
+World Notes/Capricorn
+World Notes/Charis Lu'an Is
+World Notes/Coins of Zenith
+World Notes/Craft of Creation
+World Notes/Crownspire
+World Notes/Deities of Zenith
+World Notes/Divine Council
+World Notes/Drake Tower
+World Notes/Eldoria
+World Notes/Embers
+World Notes/Empyrean
+World Notes/Era of Rebirth
+World Notes/Era of Unity
+World Notes/Esoteric
+World Notes/FantastiMart
+World Notes/Fighting ring
+World Notes/Flamell
+World Notes/Foglands
+World Notes/Foxwell
+World Notes/Fur Naz
+World Notes/Glass House
+World Notes/Guild of The Void
+World Notes/Iro Sou Prabuddh
+World Notes/Jade Peak
+World Notes/Journeyman Exam
+World Notes/Kalogeron
+World Notes/Kalogeron Underbelly
+World Notes/Lady Fortuna
+World Notes/Lazar Ebrius
+World Notes/Lu'an Is
+World Notes/Majid Marhaba
+World Notes/Mary Kaevorin
+World Notes/Masamune
+World Notes/Master Exam
+World Notes/Maxwell Foxwell
+World Notes/Midas
+World Notes/Millie Becker
+World Notes/Muris
+World Notes/Nap District
+World Notes/Naz
+World Notes/Old Pantheon
+World Notes/Osirys Esoteric
+World Notes/Ouroboros
+World Notes/Parliament
+World Notes/Path to Purpose
+World Notes/Prabuddh
+World Notes/Pupil's Eye
+World Notes/Rune Bombing of Kalogeron
+World Notes/Rune Project
+World Notes/Sassanid
+World Notes/Satsuma
+World Notes/Saxon Parisi
+World Notes/Sharan
+World Notes/Shubert
+World Notes/Silvergate
+World Notes/Sunshiro
+World Notes/Syriss Canción
+World Notes/Sythian
+World Notes/Takashi Masamune
+World Notes/The Gray Scarf Militia
+World Notes/Thetford
+World Notes/Thetfordian Decree
+World Notes/The Void
+World Notes/Training Grounds
+World Notes/Trinity
+World Notes/Umbral Codex
+World Notes/Unholy Labyrinth
+World Notes/Universal Temple
+World Notes/University of Nine Stars
+World Notes/Vault of the king of thieves
+World Notes/Verninthal
+World Notes/VoidForce
+World Notes/Wamerwick
+World Notes/Well of Worlds
+World Notes/Will Al-Basir
+World Notes/Wizard tower of Zakhad
+World Notes/Wonders
+World Notes/Ysoki
+World Notes/Zakhad
+World Notes/Zehir
+World Notes/Zenith
