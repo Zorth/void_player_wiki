@@ -86,3 +86,20 @@ h1 {
   font-weight: 800;
 }
 
+// TOC size increase
+.toc {
+  button.toc-header h3 {
+    font-size: 1.25rem;
+  }
+  
+  ul.toc-content li a {
+    font-size: 1.1rem;
+    opacity: 0.5;
+    
+    &.in-view {
+      opacity: 0.9;
+      font-weight: bold;
+    }
+  }
+}
+

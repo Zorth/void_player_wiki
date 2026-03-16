@@ -5,7 +5,9 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
     head: Component.Head(),
     header: [],
-    afterBody: [],
+    afterBody: [
+        Component.Backlinks(),
+    ],
     footer: Component.Footer({
         links: {
             "Foundry": "http://vtt.tarragon.be/join",
@@ -40,27 +42,22 @@ export const defaultContentPageLayout: PageLayout = {
         }),
         Component.Explorer({
             sortFn: (a, b) => {
-                const getLatestDate = (node: any): Date => {
-                    let latest = node.data?.date ? new Date(node.data.date) : new Date(0)
-                    const stack = [...(node.children ?? [])]
-                    while (stack.length > 0) {
-                        const n = stack.pop()
-                        if (n.data?.date) {
-                            const d = new Date(n.data.date)
-                            if (d > latest) latest = d
+                const getDate = (n) => {
+                    let l = n.data?.date ? new Date(n.data.date) : new Date(0)
+                    const s = [...(n.children ?? [])]
+                    while (s.length > 0) {
+                        const t = s.pop()
+                        if (t.data?.date) {
+                            const d = new Date(t.data.date)
+                            if (d > l) l = d
                         }
-                        if (n.children) stack.push(...n.children)
+                        if (t.children) s.push(...t.children)
                     }
-                    return latest
+                    return l
                 }
-
-                const dateA = getLatestDate(a)
-                const dateB = getLatestDate(b)
-
-                if (dateA.getTime() !== dateB.getTime()) {
-                    return dateB.getTime() - dateA.getTime()
-                }
-
+                const dA = getDate(a)
+                const dB = getDate(b)
+                if (dA.getTime() !== dB.getTime()) return dB.getTime() - dA.getTime()
                 return a.displayName.localeCompare(b.displayName, undefined, {
                     numeric: true,
                     sensitivity: "base",
@@ -100,7 +97,6 @@ export const defaultContentPageLayout: PageLayout = {
             },
         }),
         Component.DesktopOnly(Component.TableOfContents()),
-        Component.Backlinks(),
         Component.RecentNotes({ title: "Recent notes", limit: 5, showTags: false })
     ],
 }
@@ -122,27 +118,22 @@ export const defaultListPageLayout: PageLayout = {
         }),
         Component.Explorer({
             sortFn: (a, b) => {
-                const getLatestDate = (node: any): Date => {
-                    let latest = node.data?.date ? new Date(node.data.date) : new Date(0)
-                    const stack = [...(node.children ?? [])]
-                    while (stack.length > 0) {
-                        const n = stack.pop()
-                        if (n.data?.date) {
-                            const d = new Date(n.data.date)
-                            if (d > latest) latest = d
+                const getDate = (n) => {
+                    let l = n.data?.date ? new Date(n.data.date) : new Date(0)
+                    const s = [...(n.children ?? [])]
+                    while (s.length > 0) {
+                        const t = s.pop()
+                        if (t.data?.date) {
+                            const d = new Date(t.data.date)
+                            if (d > l) l = d
                         }
-                        if (n.children) stack.push(...n.children)
+                        if (t.children) s.push(...t.children)
                     }
-                    return latest
+                    return l
                 }
-
-                const dateA = getLatestDate(a)
-                const dateB = getLatestDate(b)
-
-                if (dateA.getTime() !== dateB.getTime()) {
-                    return dateB.getTime() - dateA.getTime()
-                }
-
+                const dA = getDate(a)
+                const dB = getDate(b)
+                if (dA.getTime() !== dB.getTime()) return dB.getTime() - dA.getTime()
                 return a.displayName.localeCompare(b.displayName, undefined, {
                     numeric: true,
                     sensitivity: "base",

@@ -63,6 +63,10 @@ export default ((userOpts?: Partial<Options>) => {
   const Explorer: QuartzComponent = ({ cfg, displayClass }: QuartzComponentProps) => {
     const id = `explorer-${numExplorers++}`
 
+    // Add a small script to define __name if it doesn't exist, as esbuild might inject it
+    // into stringified functions (like sortFn).
+    const nameHelper = `if (typeof __name === "undefined") { window.__name = (f, n) => f; }`
+
     return (
       <div
         class={classNames(displayClass, "explorer")}
@@ -76,6 +80,7 @@ export default ((userOpts?: Partial<Options>) => {
           mapFn: opts.mapFn.toString(),
         })}
       >
+        <script dangerouslySetInnerHTML={{ __html: nameHelper }} />
         <button
           type="button"
           class="explorer-toggle mobile-explorer hide-until-loaded"
