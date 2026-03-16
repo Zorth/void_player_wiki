@@ -240,6 +240,18 @@ async function setupExplorer(currentSlug: FullSlug) {
     }
     explorerUl.insertBefore(fragment, explorerUl.firstChild)
 
+    if (worldFilter) {
+      worldFilter.onchange = (e) => {
+        const selectedWorld = (e.target as HTMLSelectElement).value
+        if (selectedWorld === "") {
+          localStorage.removeItem("explorerFilterTarget")
+        } else {
+          localStorage.setItem("explorerFilterTarget", selectedWorld)
+        }
+        setupExplorer(currentSlug)
+      }
+    }
+
     // restore explorer scrollTop position if it exists
     const scrollTop = sessionStorage.getItem("explorerScrollTop")
     if (scrollTop) {
