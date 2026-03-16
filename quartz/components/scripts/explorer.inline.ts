@@ -174,6 +174,30 @@ async function setupExplorer(currentSlug: FullSlug) {
 
     const data = await fetchData
     const entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
+
+    if (worldFilter) {
+      // Populate worlds if not already populated
+      if (worldFilter.options.length <= 1) {
+        let worlds = entries
+          .filter(([_, details]) => details.tags.includes("world"))
+          .map(([slug, details]) => ({ slug, title: details.title }))
+          .sort((a, b) => a.title.localeCompare(b.title))
+
+        const theVoid = entries.find(([_, details]) => details.title === "The Void")
+        if (theVoid && !worlds.some((w) => w.title === "The Void")) {
+          worlds = [{ slug: theVoid[0], title: theVoid[1].title }, ...worlds]
+        }
+
+        for (const world of worlds) {
+          const option = document.createElement("option")
+          option.value = world.slug
+          option.textContent = world.title
+          worldFilter.appendChild(option)
+        }
+      }
+      worldFilter.value = filterTarget ?? ""
+    }
+
     const trie = FileTrieNode.fromEntries(entries)
 
     // Apply functions in order

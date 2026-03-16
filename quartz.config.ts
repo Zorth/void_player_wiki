@@ -26,6 +26,9 @@ const config: QuartzConfig = {
         header: "Schibsted Grotesk",
         body: "Source Sans Pro",
         code: "IBM Plex Mono",
+        header: "Cinzel",
+        body: "Geist",
+        code: "Geist Mono",
       },
       colors: {
         lightMode: {
