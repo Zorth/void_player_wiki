@@ -172,12 +172,15 @@ async function setupExplorer(currentSlug: FullSlug) {
       serializedExplorerState.map((entry: FolderState) => [entry.path, entry.collapsed]),
     )
 
+    const worldFilterEl = explorer.querySelector("#explorer-world-filter") as HTMLSelectElement
+    const filterTarget = localStorage.getItem("explorerFilterTarget") as FullSlug | null
+
     const data = await fetchData
     const entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
 
-    if (worldFilter) {
+    if (worldFilterEl) {
       // Populate worlds if not already populated
-      if (worldFilter.options.length <= 1) {
+      if (worldFilterEl.options.length <= 1) {
         let worlds = entries
           .filter(([_, details]) => details.tags.includes("world"))
           .map(([slug, details]) => ({ slug, title: details.title }))
@@ -192,10 +195,10 @@ async function setupExplorer(currentSlug: FullSlug) {
           const option = document.createElement("option")
           option.value = world.slug
           option.textContent = world.title
-          worldFilter.appendChild(option)
+          worldFilterEl.appendChild(option)
         }
       }
-      worldFilter.value = filterTarget ?? ""
+      worldFilterEl.value = filterTarget ?? ""
     }
 
     const trie = FileTrieNode.fromEntries(entries)
@@ -240,8 +243,8 @@ async function setupExplorer(currentSlug: FullSlug) {
     }
     explorerUl.insertBefore(fragment, explorerUl.firstChild)
 
-    if (worldFilter) {
-      worldFilter.onchange = (e) => {
+    if (worldFilterEl) {
+      worldFilterEl.onchange = (e) => {
         const selectedWorld = (e.target as HTMLSelectElement).value
         if (selectedWorld === "") {
           localStorage.removeItem("explorerFilterTarget")
