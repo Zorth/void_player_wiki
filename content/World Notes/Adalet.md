@@ -13,3 +13,7 @@ date:
 ### Vassals
 - House [[Maimond]] (Architects & Construction)
 - House [[Varithal]] (Lawyers)
+  
+  # House Crest
+  ![[Adalet_Crest_Outline.png]]
+
