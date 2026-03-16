@@ -50,10 +50,10 @@ export const defaultContentPageLayout: PageLayout = {
                         sensitivity: "base",
                     })
                 }
-                const dateA = new Date(a.data?.date ?? 0)
-                const dateB = new Date(b.data?.date ?? 0)
+                const dateA = a.data?.date ? new Date(a.data.date) : new Date(0)
+                const dateB = b.data?.date ? new Date(b.data.date) : new Date(0)
                 if (dateA.getTime() !== dateB.getTime()) return dateB.getTime() - dateA.getTime()
-                return b.displayName.localeCompare(a.displayName, undefined, {
+                return a.displayName.localeCompare(b.displayName, undefined, {
                     numeric: true,
                     sensitivity: "base",
                 })
@@ -121,10 +121,10 @@ export const defaultListPageLayout: PageLayout = {
                         sensitivity: "base",
                     })
                 }
-                const dateA = new Date(a.data?.date ?? 0)
-                const dateB = new Date(b.data?.date ?? 0)
+                const dateA = a.data?.date ? new Date(a.data.date) : new Date(0)
+                const dateB = b.data?.date ? new Date(b.data.date) : new Date(0)
                 if (dateA.getTime() !== dateB.getTime()) return dateB.getTime() - dateA.getTime()
-                return b.displayName.localeCompare(a.displayName, undefined, {
+                return a.displayName.localeCompare(b.displayName, undefined, {
                     numeric: true,
                     sensitivity: "base",
                 })
@@ -132,4 +132,5 @@ export const defaultListPageLayout: PageLayout = {
         }),
     ],
     right: [],
+    afterBody: [Component.Backlinks()],
 }
