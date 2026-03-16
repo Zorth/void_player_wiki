@@ -40,22 +40,31 @@ export const defaultContentPageLayout: PageLayout = {
         }),
         Component.Explorer({
             sortFn: (a, b) => {
-                if (a.isFolder && !b.isFolder) {
-                    return -1
+                const getLatestDate = (node: any): Date => {
+                    let latest = new Date(0)
+                    if (node.data?.date) {
+                        latest = new Date(node.data.date)
+                    }
+                    for (const child of node.children ?? []) {
+                        const childDate = getLatestDate(child)
+                        if (childDate > latest) {
+                            latest = childDate
+                        }
+                    }
+                    return latest
                 }
-                if (!a.isFolder && b.isFolder) {
-                    return 1
+
+                const dateA = getLatestDate(a)
+                const dateB = getLatestDate(b)
+
+                if (dateA.getTime() !== dateB.getTime()) {
+                    return dateB.getTime() - dateA.getTime()
                 }
-                if (a.isFolder && b.isFolder) {
-                    return a.displayName.localeCompare(b.displayName, undefined, {
-                        numeric: true,
-                        sensitivity: "base",
-                    })
-                }
-                // Both are files, sort by date
-                const dateA = new Date(a.data?.date ?? 0)
-                const dateB = new Date(b.data?.date ?? 0)
-                return dateB.getTime() - dateA.getTime()
+
+                return a.displayName.localeCompare(b.displayName, undefined, {
+                    numeric: true,
+                    sensitivity: "base",
+                })
             },
         }),
     ],
@@ -113,22 +122,31 @@ export const defaultListPageLayout: PageLayout = {
         }),
         Component.Explorer({
             sortFn: (a, b) => {
-                if (a.isFolder && !b.isFolder) {
-                    return -1
+                const getLatestDate = (node: any): Date => {
+                    let latest = new Date(0)
+                    if (node.data?.date) {
+                        latest = new Date(node.data.date)
+                    }
+                    for (const child of node.children ?? []) {
+                        const childDate = getLatestDate(child)
+                        if (childDate > latest) {
+                            latest = childDate
+                        }
+                    }
+                    return latest
                 }
-                if (!a.isFolder && b.isFolder) {
-                    return 1
+
+                const dateA = getLatestDate(a)
+                const dateB = getLatestDate(b)
+
+                if (dateA.getTime() !== dateB.getTime()) {
+                    return dateB.getTime() - dateA.getTime()
                 }
-                if (a.isFolder && b.isFolder) {
-                    return a.displayName.localeCompare(b.displayName, undefined, {
-                        numeric: true,
-                        sensitivity: "base",
-                    })
-                }
-                // Both are files, sort by date
-                const dateA = new Date(a.data?.date ?? 0)
-                const dateB = new Date(b.data?.date ?? 0)
-                return dateB.getTime() - dateA.getTime()
+
+                return a.displayName.localeCompare(b.displayName, undefined, {
+                    numeric: true,
+                    sensitivity: "base",
+                })
             },
         }),
     ],
