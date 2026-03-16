@@ -38,7 +38,26 @@ export const defaultContentPageLayout: PageLayout = {
                 { Component: Component.ReaderMode() },
             ],
         }),
-        Component.Explorer(),
+        Component.Explorer({
+            sortFn: (a, b) => {
+                if (a.isFolder && !b.isFolder) {
+                    return -1
+                }
+                if (!a.isFolder && b.isFolder) {
+                    return 1
+                }
+                if (a.isFolder && b.isFolder) {
+                    return a.displayName.localeCompare(b.displayName, undefined, {
+                        numeric: true,
+                        sensitivity: "base",
+                    })
+                }
+                // Both are files, sort by date
+                const dateA = new Date(a.data?.date ?? 0)
+                const dateB = new Date(b.data?.date ?? 0)
+                return dateB.getTime() - dateA.getTime()
+            },
+        }),
     ],
     right: [
         Component.Graph({
@@ -92,7 +111,26 @@ export const defaultListPageLayout: PageLayout = {
                 { Component: Component.Darkmode() },
             ],
         }),
-        Component.Explorer(),
+        Component.Explorer({
+            sortFn: (a, b) => {
+                if (a.isFolder && !b.isFolder) {
+                    return -1
+                }
+                if (!a.isFolder && b.isFolder) {
+                    return 1
+                }
+                if (a.isFolder && b.isFolder) {
+                    return a.displayName.localeCompare(b.displayName, undefined, {
+                        numeric: true,
+                        sensitivity: "base",
+                    })
+                }
+                // Both are files, sort by date
+                const dateA = new Date(a.data?.date ?? 0)
+                const dateB = new Date(b.data?.date ?? 0)
+                return dateB.getTime() - dateA.getTime()
+            },
+        }),
     ],
     right: [],
 }
