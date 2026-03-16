@@ -41,15 +41,15 @@ export const defaultContentPageLayout: PageLayout = {
         Component.Explorer({
             sortFn: (a, b) => {
                 const getLatestDate = (node: any): Date => {
-                    let latest = new Date(0)
-                    if (node.data?.date) {
-                        latest = new Date(node.data.date)
-                    }
-                    for (const child of node.children ?? []) {
-                        const childDate = getLatestDate(child)
-                        if (childDate > latest) {
-                            latest = childDate
+                    let latest = node.data?.date ? new Date(node.data.date) : new Date(0)
+                    const stack = [...(node.children ?? [])]
+                    while (stack.length > 0) {
+                        const n = stack.pop()
+                        if (n.data?.date) {
+                            const d = new Date(n.data.date)
+                            if (d > latest) latest = d
                         }
+                        if (n.children) stack.push(...n.children)
                     }
                     return latest
                 }
@@ -123,15 +123,15 @@ export const defaultListPageLayout: PageLayout = {
         Component.Explorer({
             sortFn: (a, b) => {
                 const getLatestDate = (node: any): Date => {
-                    let latest = new Date(0)
-                    if (node.data?.date) {
-                        latest = new Date(node.data.date)
-                    }
-                    for (const child of node.children ?? []) {
-                        const childDate = getLatestDate(child)
-                        if (childDate > latest) {
-                            latest = childDate
+                    let latest = node.data?.date ? new Date(node.data.date) : new Date(0)
+                    const stack = [...(node.children ?? [])]
+                    while (stack.length > 0) {
+                        const n = stack.pop()
+                        if (n.data?.date) {
+                            const d = new Date(n.data.date)
+                            if (d > latest) latest = d
                         }
+                        if (n.children) stack.push(...n.children)
                     }
                     return latest
                 }
