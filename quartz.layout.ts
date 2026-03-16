@@ -42,23 +42,18 @@ export const defaultContentPageLayout: PageLayout = {
         }),
         Component.Explorer({
             sortFn: (a, b) => {
-                const getDate = (n) => {
-                    let l = n.data?.date ? new Date(n.data.date) : new Date(0)
-                    const s = [...(n.children ?? [])]
-                    while (s.length > 0) {
-                        const t = s.pop()
-                        if (t.data?.date) {
-                            const d = new Date(t.data.date)
-                            if (d > l) l = d
-                        }
-                        if (t.children) s.push(...t.children)
-                    }
-                    return l
+                if (a.isFolder && !b.isFolder) return -1
+                if (!a.isFolder && b.isFolder) return 1
+                if (a.isFolder && b.isFolder) {
+                    return a.displayName.localeCompare(b.displayName, undefined, {
+                        numeric: true,
+                        sensitivity: "base",
+                    })
                 }
-                const dA = getDate(a)
-                const dB = getDate(b)
-                if (dA.getTime() !== dB.getTime()) return dB.getTime() - dA.getTime()
-                return a.displayName.localeCompare(b.displayName, undefined, {
+                const dateA = new Date(a.data?.date ?? 0)
+                const dateB = new Date(b.data?.date ?? 0)
+                if (dateA.getTime() !== dateB.getTime()) return dateB.getTime() - dateA.getTime()
+                return b.displayName.localeCompare(a.displayName, undefined, {
                     numeric: true,
                     sensitivity: "base",
                 })
@@ -118,23 +113,18 @@ export const defaultListPageLayout: PageLayout = {
         }),
         Component.Explorer({
             sortFn: (a, b) => {
-                const getDate = (n) => {
-                    let l = n.data?.date ? new Date(n.data.date) : new Date(0)
-                    const s = [...(n.children ?? [])]
-                    while (s.length > 0) {
-                        const t = s.pop()
-                        if (t.data?.date) {
-                            const d = new Date(t.data.date)
-                            if (d > l) l = d
-                        }
-                        if (t.children) s.push(...t.children)
-                    }
-                    return l
+                if (a.isFolder && !b.isFolder) return -1
+                if (!a.isFolder && b.isFolder) return 1
+                if (a.isFolder && b.isFolder) {
+                    return a.displayName.localeCompare(b.displayName, undefined, {
+                        numeric: true,
+                        sensitivity: "base",
+                    })
                 }
-                const dA = getDate(a)
-                const dB = getDate(b)
-                if (dA.getTime() !== dB.getTime()) return dB.getTime() - dA.getTime()
-                return a.displayName.localeCompare(b.displayName, undefined, {
+                const dateA = new Date(a.data?.date ?? 0)
+                const dateB = new Date(b.data?.date ?? 0)
+                if (dateA.getTime() !== dateB.getTime()) return dateB.getTime() - dateA.getTime()
+                return b.displayName.localeCompare(a.displayName, undefined, {
                     numeric: true,
                     sensitivity: "base",
                 })
