@@ -208,30 +208,30 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       return computedStyleMap["--secondary"]
     }
 
+    let nodeColor = visited.has(d.id) || d.id.startsWith("tags/")
+      ? computedStyleMap["--tertiary"]
+      : computedStyleMap["--gray"]
+
     if (colorGroups) {
       for (const group of colorGroups) {
         const query = group.query.trim()
         if (query.startsWith("tag:#")) {
           const tag = query.substring(5).trim()
           if (d.tags.includes(tag) || (d.id.startsWith("tags/") && d.id.substring(5) === tag)) {
-            return group.color
+            nodeColor = group.color
           }
         } else if (query.startsWith("path:")) {
           const path = query.substring(5).trim()
           if (d.id.startsWith(path)) {
-            return group.color
+            nodeColor = group.color
           }
         } else if (query === "") {
-          return group.color
+          nodeColor = group.color
         }
       }
     }
 
-    if (visited.has(d.id) || d.id.startsWith("tags/")) {
-      return computedStyleMap["--tertiary"]
-    } else {
-      return computedStyleMap["--gray"]
-    }
+    return nodeColor
   }
 
   function nodeRadius(d: NodeData) {
