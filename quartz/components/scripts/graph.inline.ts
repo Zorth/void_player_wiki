@@ -87,13 +87,21 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     showTags,
     focusOnHover,
     enableRadial,
+    colorGroups,
+    excludePath,
+    nodeSizeMultiplier,
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
   const data: Map<SimpleSlug, ContentDetails> = new Map(
-    Object.entries<ContentDetails>(await fetchData).map(([k, v]) => [
-      simplifySlug(k as FullSlug),
-      v,
-    ]),
+    Object.entries<ContentDetails>(await fetchData)
+      .filter(([k]) => {
+        if (!excludePath) return true
+        return !excludePath.some((path) => k.startsWith(path))
+      })
+      .map(([k, v]) => [
+        simplifySlug(k as FullSlug),
+        v,
+      ]),
   )
   const links: SimpleLinkData[] = []
   const tags: SimpleSlug[] = []
@@ -198,7 +206,28 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    }
+
+    if (colorGroups) {
+      for (const group of colorGroups) {
+        const query = group.query.trim()
+        if (query.startsWith("tag:#")) {
+          const tag = query.substring(5).trim()
+          if (d.tags.includes(tag) || (d.id.startsWith("tags/") && d.id.substring(5) === tag)) {
+            return group.color
+          }
+        } else if (query.startsWith("path:")) {
+          const path = query.substring(5).trim()
+          if (d.id.startsWith(path)) {
+            return group.color
+          }
+        } else if (query === "") {
+          return group.color
+        }
+      }
+    }
+
+    if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
       return computedStyleMap["--gray"]
@@ -209,7 +238,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const numLinks = graphData.links.filter(
       (l) => l.source.id === d.id || l.target.id === d.id,
     ).length
-    return 2 + Math.sqrt(numLinks)
+    return (2 + Math.sqrt(numLinks)) * (nodeSizeMultiplier ?? 1)
   }
 
   let hoveredNodeId: string | null = null
@@ -416,7 +445,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       })
 
     if (isTagNode) {
-      gfx.stroke({ width: 2, color: computedStyleMap["--tertiary"] })
+      gfx.stroke({ width: 2, color: color(n) })
     }
 
     nodesContainer.addChild(gfx)

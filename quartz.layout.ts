@@ -67,28 +67,60 @@ export const defaultContentPageLayout: PageLayout = {
                 zoom: true, // whether to allow zooming in and out
                 depth: 1, // how many hops of notes to display
                 scale: 1.1, // default view scale
-                repelForce: 0.5, // how much nodes should repel each other
-                centerForce: 0.3, // how much force to use when trying to center the nodes
-                linkDistance: 30, // how long should the links be by default?
+                repelForce: 10, // how much nodes should repel each other
+                centerForce: 0.33, // how much force to use when trying to center the nodes
+                linkDistance: 184, // how long should the links be by default?
                 fontSize: 0.6, // what size should the node labels be?
                 opacityScale: 1, // how quickly do we fade out the labels when zooming out?
                 removeTags: [], // what tags to remove from the graph
                 showTags: true, // whether to show tags in the graph
                 enableRadial: false, // whether to constrain the graph, similar to Obsidian
+                nodeSizeMultiplier: 1.81,
+                excludePath: ["_META"],
+                colorGroups: [
+                    { query: "tag:#session", color: "#E05252" },
+                    { query: "tag:#pc/apprentice", color: "#C2A05B" },
+                    { query: "tag:#event", color: "#B1E052" },
+                    { query: "", color: "#52E052" },
+                    { query: "tag:#npc", color: "#52E0B1" },
+                    { query: "tag:#location", color: "#52B1E0" },
+                    { query: "tag:#organization", color: "#5252E0" },
+                    { query: "tag:#world", color: "#B152E0" },
+                    { query: "path:tags", color: "#E052B1" },
+                    { query: "path:_META", color: "#050724" },
+                    { query: "tag:#pc/journeyman", color: "#E0B152" },
+                    { query: "tag:#pc/master", color: "#FFB100" },
+                ]
             },
             globalGraph: {
                 drag: true,
                 zoom: true,
                 depth: -1,
                 scale: 0.9,
-                repelForce: 0.5,
-                centerForce: 0.3,
-                linkDistance: 30,
+                repelForce: 10,
+                centerForce: 0.33,
+                linkDistance: 184,
                 fontSize: 0.6,
                 opacityScale: 1,
                 removeTags: [], // what tags to remove from the graph
                 showTags: false, // whether to show tags in the graph
                 enableRadial: true, // whether to constrain the graph, similar to Obsidian
+                nodeSizeMultiplier: 1.81,
+                excludePath: ["_META"],
+                colorGroups: [
+                    { query: "tag:#session", color: "#E05252" },
+                    { query: "tag:#pc/apprentice", color: "#C2A05B" },
+                    { query: "tag:#event", color: "#B1E052" },
+                    { query: "", color: "#52E052" },
+                    { query: "tag:#npc", color: "#52E0B1" },
+                    { query: "tag:#location", color: "#52B1E0" },
+                    { query: "tag:#organization", color: "#5252E0" },
+                    { query: "tag:#world", color: "#B152E0" },
+                    { query: "path:tags", color: "#E052B1" },
+                    { query: "path:_META", color: "#050724" },
+                    { query: "tag:#pc/journeyman", color: "#E0B152" },
+                    { query: "tag:#pc/master", color: "#FFB100" },
+                ]
             },
         }),
         Component.DesktopOnly(Component.TableOfContents()),

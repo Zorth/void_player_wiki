@@ -19,6 +19,12 @@ export interface D3Config {
   showTags: boolean
   focusOnHover?: boolean
   enableRadial?: boolean
+  colorGroups?: {
+    query: string
+    color: string
+  }[]
+  excludePath?: string[]
+  nodeSizeMultiplier?: number
 }
 
 interface GraphOptions {
