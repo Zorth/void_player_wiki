@@ -18,9 +18,9 @@ The only problem was they wouldn't let him go like that and the Guild had the le
 Finally out, Klavik has put his skills for the better. A better life, but whenever back in Sythian, he can't help to look over his shoulder once in a while because of the traces of his past.
 
 
-![[Klavik Irelok.png]]
+![[klavik irelok.png]]
 
-![[KlavikChart.png]]
+![[klavikchart.png]]
 
 ## Klavik's Journeyman Home:
 A nice and pleasant workshop and living quarter combined. They usually say to split your work station and bed far apart but Klavik does not care.

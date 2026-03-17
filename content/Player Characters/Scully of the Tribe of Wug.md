@@ -9,4 +9,4 @@ image: Scully Wug.png
 ---
 #pc/apprentice 
 
-![[Scully Wug.png]]
+![[scully wug.png]]

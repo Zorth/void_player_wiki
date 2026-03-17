@@ -57,4 +57,4 @@ The Divine Council is the governing body of the city, comprised of leaders who e
 - [[Andreía]]
 - [[Ebrius]]
 
-![[Kalogeron_CoatOfArms.png]]
+![[kalogeron_coatofarms.png]]

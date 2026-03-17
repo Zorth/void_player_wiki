@@ -21,4 +21,4 @@ date:
 > - Talks with a southern accent.
 > - Art by: Aienai.
 
-![[Millie Becker.png]]
+![[millie becker.png]]

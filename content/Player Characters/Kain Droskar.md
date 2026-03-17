@@ -19,4 +19,4 @@ Now Kain seeks more than battle — he hunts meaning in power. Whether his path 
 
 
 
-![[Kain Droskar.png|425]]
+![[kain droskar.png|425]]

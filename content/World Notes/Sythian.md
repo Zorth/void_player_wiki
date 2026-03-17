@@ -8,7 +8,7 @@ date:
 
 #world
 
-![[Sythian_Logo.svg]]
+![[sythian_logo.svg]]
 
 Sythian is the world ran by Jasper.
 

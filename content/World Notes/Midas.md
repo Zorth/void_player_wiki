@@ -14,4 +14,4 @@ The man himself exudes a powerful aura, witch might be tied to the artifacts and
 > [!question]
 > Most notably is that Midas, is someone that is more tied to stories and myth dating back even to the [[Era of Rebirth]]. Question remains if the is that same person or someone else.
 
-![[Midas.jpg|300]]
+![[midas.jpg|300]]

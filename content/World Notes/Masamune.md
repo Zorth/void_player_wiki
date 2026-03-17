@@ -14,4 +14,4 @@ A noble house within the [[Satsuma|Satsuma Shogunate]].
 
 They monitor the presence of mercenaries like [[The Void]] within Shogunate lands. Their seal is used for official decrees regarding conduct and security within the realm.
 
-![[Masamune.png]]
+![[masamune.png]]

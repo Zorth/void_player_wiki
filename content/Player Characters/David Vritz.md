@@ -9,4 +9,4 @@ image: David Vritz.png
 ---
 #pc/apprentice 
 
-![[David Vritz.png]]
+![[david vritz.png]]

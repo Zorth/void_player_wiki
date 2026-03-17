@@ -10,5 +10,5 @@ date:
 
 Head of house [[Kaevorin]]
 
-![[Mary Kaevorin.png|300]]
+![[mary kaevorin.png|300]]
 _AI Art_

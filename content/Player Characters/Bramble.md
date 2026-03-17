@@ -25,4 +25,4 @@ Actual war cry from a leshy chasing an ant into the woods for 3 hours. You will 
 
 
 
-![[Bramble.png]]
+![[bramble.png]]

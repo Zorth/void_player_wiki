@@ -9,4 +9,4 @@ image: Mona.png
 ---
 #pc/apprentice 
 
-![[Mona.png]]
+![[mona.png]]

@@ -10,5 +10,5 @@ date:
 
 Head of house [[Foxwell]], known to be a good employer, great inventor. Often resides in his shop, [[Foxwell's Machinations]].
 
-![[Maxwell Foxwell.png|300]]
+![[maxwell foxwell.png|300]]
 _Art by: Michael Myers_

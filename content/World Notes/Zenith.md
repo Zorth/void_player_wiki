@@ -14,7 +14,7 @@ Zenith consists of four kingdoms with diverse landscapes, from forests and plain
 
 The four kingdoms have an uneasy coexistence. While open war is rare, there are constant rivalries regarding politics, trade, and alliances. Beyond the settled borders are wilderness areas and ancient ruins.
 
-![[Zenith_worldmap.png]]
+![[zenith_worldmap.png]]
 
 ## Reputation
 
