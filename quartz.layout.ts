@@ -89,7 +89,7 @@ export const defaultContentPageLayout: PageLayout = {
                     { query: "path:tags", color: "#E052B1" },
                     { query: "path:_META", color: "#050724" },
                     { query: "tag:#pc/journeyman", color: "#E0B152" },
-                    { query: "tag:#pc/master", color: "#FFB100" },
+                    { query: "tag:#pc/master", color: "#FFAA00" },
                 ]
             },
             globalGraph: {
@@ -119,7 +119,7 @@ export const defaultContentPageLayout: PageLayout = {
                     { query: "path:tags", color: "#E052B1" },
                     { query: "path:_META", color: "#050724" },
                     { query: "tag:#pc/journeyman", color: "#E0B152" },
-                    { query: "tag:#pc/master", color: "#FFB100" },
+                    { query: "tag:#pc/master", color: "#FFAA00" },
                 ]
             },
         }),

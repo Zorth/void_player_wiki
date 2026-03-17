@@ -213,8 +213,15 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       : computedStyleMap["--gray"]
 
     if (colorGroups) {
+      const defaultGroup = colorGroups.find((g) => g.query.trim() === "")
+      if (defaultGroup) {
+        nodeColor = defaultGroup.color
+      }
+
       for (const group of colorGroups) {
         const query = group.query.trim()
+        if (query === "") continue
+
         if (query.startsWith("tag:#")) {
           const tag = query.substring(5).trim()
           if (d.tags.includes(tag) || (d.id.startsWith("tags/") && d.id.substring(5) === tag)) {
@@ -225,8 +232,6 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
           if (d.id.startsWith(path)) {
             nodeColor = group.color
           }
-        } else if (query === "") {
-          nodeColor = group.color
         }
       }
     }
