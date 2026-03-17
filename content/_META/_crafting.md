@@ -2,7 +2,7 @@
 title: Craft an Item
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
 
@@ -10,8 +10,8 @@ The [Craft](https://2e.aonprd.com/Actions.aspx?ID=2385) downtime activity used i
 
 1. Choose 1 common item, or an uncommon/rare item to which you have obtained the formula.
 2. Make sure you have the appropriate feats to craft the item:
-	- You must be Trained in [Crafting](https://2e.aonprd.com/Skills.aspx?ID=37)
-	- You might need [Alchemical Crafting](https://2e.aonprd.com/Feats.aspx?ID=5117) or [Magical Crafting](https://2e.aonprd.com/Feats.aspx?ID=5178)
+   - You must be Trained in [Crafting](https://2e.aonprd.com/Skills.aspx?ID=37)
+   - You might need [Alchemical Crafting](https://2e.aonprd.com/Feats.aspx?ID=5117) or [Magical Crafting](https://2e.aonprd.com/Feats.aspx?ID=5178)
 3. You must spend half of the item's price in materials to craft the item
 4. Roll the craft check:
 

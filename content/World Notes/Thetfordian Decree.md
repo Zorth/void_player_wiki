@@ -2,10 +2,11 @@
 title:
 draft: false
 aliases:
-  - 
+  -
 date: 2026-01-17
 ---
-#event 
+
+#event
 [[The Void]] sent people to establish a portal connection in [[Thetford]].
 They were quested by [[Lord Korwin MacLeod]] to transport a messenger ( read his puppy with a love letter) to an ambassador from [[Nosia]]. Later know as his lover.
 

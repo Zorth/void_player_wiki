@@ -1,25 +1,41 @@
 ---
-title: Sassanid Empire
+title: Sassanid
 draft: false
 aliases:
   - Sassanid Empire
 date:
 ---
+
 #location [[Zenith]]
 
-The Sassanid Empire is a vast desert spanning the central Zenith continent.
+The Sassanid Empire focuses on arcane advancement and order. It has a magical infrastructure and a scholarly culture.
 
-It's leader, the [[Sultan Majid Marhaba]] rules from his magical tower in [[Sharan]], the capital.
-
-> [!question]
-> He seems to be using one of the [[Coins of Zenith]] to oppress the population who's not on his side. His Sphynx companion might be a manifestation of this?
-
-The people of the Empire widely worship the sun god [[Esharun]].
-
-The deserts seem to have other natives that live outside cities, but so far we have not interacted with them.
+Ruled by [[Majid Marhaba|Sultan Majid Marhaba]], who is often seen with a sphinx companion.
 
 > [!question]
-> Who are the desert people and what do they want?
-> Can we ally with them to better the situation of the empire?
+> The Sultan may be using a [[Coins of Zenith|Coin of Zenith]] to maintain control. The sphinx could be a manifestation of this power.
+
+## Geography and Economy
+
+Most of the empire is desert and dunes. Cities are sustained by magical irrigation and aqueducts. The coastline produces enchanted glass, gemstones, and alchemical reagents.
+
+There are desert natives living outside the main cities that the party hasn't met yet.
+
+> [!question]
+> Who are the desert people? Can they be recruited or allied with?
+
+## Capital and Education
+
+The capital is [[Sharan]]. It houses the [[University of Nine Stars]], a center for magic and law. Education is mandatory in most cities; literacy and debate are highly valued.
+
+The culture prizes order and dignity. Many follow the solar deity [[Esharun]].
+
+## Military and Magic
+
+The military is ritualized and uses arcane support. Elite orders include the Flamborn Phalanx, Crystal Guard, and Obsidian Eye.
+
+Magical scrying is used for surveillance to catch magical incidents early.
+
+Magic is regulated. Commoners cannot use necromancy, but nobles have access to all schools. Most spells require a license from the University or military.
 
 ![[Deities of Zenith]]

@@ -2,7 +2,7 @@
 title: Earn Income
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
 

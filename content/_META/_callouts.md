@@ -2,11 +2,12 @@
 title: Using Callouts in the wiki
 draft: false
 aliases:
-- Callouts
+  - Callouts
 date:
 ---
 
 ## Predefined callouts
+
 Callouts are used to section off information into blocks that are visible and colored. Stick to the dedicated use for predefined callouts in order to avoid confusion.
 
 > [!abstract]
@@ -53,4 +54,3 @@ Callouts are used to section off information into blocks that are visible and co
 
 > [!example]
 > Aliases: "example"
-

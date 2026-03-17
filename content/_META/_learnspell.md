@@ -2,7 +2,7 @@
 title: Learn a Spell
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
 

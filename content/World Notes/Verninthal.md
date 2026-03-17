@@ -2,10 +2,11 @@
 title:
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
-#world 
+
+#world
 
 Verninthal is the metropolis world ran by Siebe.
 

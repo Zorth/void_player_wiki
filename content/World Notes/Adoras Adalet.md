@@ -2,9 +2,10 @@
 title: Adoras Adalet
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
+
 #npc [[Kalogeron]]
 
 > [!Quote]
@@ -12,5 +13,4 @@ date:
 > Outside his official duties, he is a passionate architect who enjoys designing miniature models of projects for the city or his own residence.
 
 ![[Adoras Adalet.png|200]]
-_Art by: Hyein Do_
-
+_Art by: Hyein Go_

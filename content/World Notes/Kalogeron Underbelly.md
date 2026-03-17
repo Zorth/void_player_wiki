@@ -2,9 +2,10 @@
 title:
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
+
 #location [[Kalogeron]]
 
 **The Underbelly** is a name for the shady underground city that lies beneath [[Kalogeron]]
@@ -17,11 +18,13 @@ The 1st layer is ruled by 2 lords. The 2nd layer is much more sinister and fille
 > Entry through [[Hog's Head]] pub
 
 ## 1st Layer Lords:
+
 - [[Ashmedai]]
 - [[Zehir]]
 
 ## 2nd Layer Lords:
+
 They deal with the undead.
+
 - [[Eroc]]
 - [[Dobrall]]
-

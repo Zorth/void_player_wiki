@@ -2,24 +2,27 @@
 title: Kalogeron
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
+
 #world #location/settlement 
 
 > [!Question] Current Plot Points
+>
 > - [[Cliford]] ?
-> 	- Level range 1-3
+>   - Level range 1-3
 > - Who is behind the [[Pupil's Eye]] and why do they oppose the [[Rune Project]]?
-> 	- Are they friend or foe?
-> 	- This plot point can be found in [[Kalogeron Underbelly]] layer 2 (I think), level range ~3-6
+>   - Are they friend or foe?
+>   - This plot point can be found in [[Kalogeron Underbelly]] layer 2 (I think), level range ~3-6
 > - The [[Wizard tower of Zakhad]]
-> 	- Megadungeon, level range 7+
-> 	- Level 2 TBD
+>   - Megadungeon, level range 7+
+>   - Level 2 TBD
 
 Kalogeron is the metropolis city-state ran by Mattis. It is located on a land bridge connecting the continents of **[[Wethrun]]** and **[[Elaor]]** on the world of **[[Sythian]]**.
 
 # Kalogeron, Metropolis of the Divine
+
 > [!Quote] [[Fur Naz|Scribe Fur]], House [[Naz]]
 > Kalogeron, Metropolis of the Devine, the oldest city to exist on this world. A city bustling with people of all kinds, trade, beliefs and trouble.
 >
@@ -37,13 +40,6 @@ The city's culture is deeply tied to the [[Old Pantheon]], with many citizens ch
 
 ## The Great Houses of Kalogeron
 
-### The Divine Council
-- [[Lu'an Is]]
-- [[Canción]]
-- [[Prabuddh]]
-- [[Adalet]]
-
-
 ### [[Divine Council]]
 
 The Divine Council is the governing body of the city, comprised of leaders who embody the virtues of their respective deities.
@@ -54,6 +50,7 @@ The Divine Council is the governing body of the city, comprised of leaders who e
 - [[Adalet]] (Leader: [[Adoras Adalet]])
 
 ### The Ruling Body
+
 - [[Fortuna]]
 - [[Esoteric]]
 - [[Naz]]

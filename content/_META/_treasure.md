@@ -2,38 +2,40 @@
 title: Treasure
 draft: false
 aliases:
-  - 
+  -
 date:
 ---
 
-This note serves as a guideline for the amount of treasure you can expect per level.
+## Pathfinder 2e Treasure Guidelines
 
-Keep in mind most of this treasure will be in (magical) items and thus will lose half of its value when sold. You should be able to expect a 50/50 split of items the session's level and the level + 1.
+Each session should reward players according to **Table 10-9 of the GM Core**. Either the total loot should be 1/4th of the "Total Value" column or each PC receives the "Currency per additional PC" column for the session's level.
 
-All values are in standard gold pieces (gp).
+❗ **Items vs. Currency**: Permanent and consumable magic items should typically make up **~3/4ths** of the reward value.
 
-| Level | Total Session Loot | Per Person Loot |
-| ----- | ------------------ | --------------- |
-| 1     | 43.75              | 10              |
-| 2     | 75                 | 18              |
-| 3     | 125                | 30              |
-| 4     | 212.5              | 50              |
-| 5     | 337.5              | 80              |
-| 6     | 500                | 125             |
-| 7     | 725                | 180             |
-| 8     | 1,000              | 250             |
-| 9     | 1,425              | 350             |
-| 10    | 2,000              | 500             |
-| 11    | 2,875              | 700             |
-| 12    | 4,125              | 1,000           |
-| 13    | 6,250              | 1,500           |
-| 14    | 9,125              | 2,250           |
-| 15    | 13,625             | 3,250           |
-| 16    | 20,625             | 5,000           |
-| 17    | 32,000             | 7,500           |
-| 18    | 52,000             | 12,000          |
-| 19    | 83,750             | 20,000          |
-| 20    | 122,500            | 35,000          |
+### Treasure by Level
+
+| Level | Total Session Loot (gp) | Per Person Loot (gp) |
+| :--- | :--- | :--- |
+| 1 | 43.75 | 10 |
+| 2 | 75 | 18 |
+| 3 | 125 | 30 |
+| 4 | 212.5 | 50 |
+| 5 | 337.5 | 80 |
+| 6 | 500 | 125 |
+| 7 | 725 | 180 |
+| 8 | 1,000 | 250 |
+| 9 | 1,425 | 350 |
+| 10 | 2,000 | 500 |
+| 11 | 2,875 | 700 |
+| 12 | 4,125 | 1,000 |
+| 13 | 6,250 | 1,500 |
+| 14 | 9,125 | 2,250 |
+| 15 | 13,625 | 3,250 |
+| 16 | 20,625 | 5,000 |
+| 17 | 32,000 | 7,500 |
+| 18 | 52,000 | 12,000 |
+| 19 | 83,750 | 20,000 |
+| 20 | 122,500 | 35,000 |
 
 ## Quick Loot Distribution
 
@@ -44,7 +46,9 @@ To easily and fairly divide loot, the "buy back" method is often used by players
 3. "Buy back" the items you want for half item price.
 
 Example:
+
 > For a party of 4 the loot is:
+>
 > - 8 sp (or 0.8 gp)
 > - 1x [Hide Shield](https://2e.aonprd.com/Shields.aspx?ID=11) (worth 2 gp)
 > - 1x [Palstave](https://2e.aonprd.com/Weapons.aspx?ID=506) (worth 4 sp, or 0.4 gp)
