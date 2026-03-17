@@ -224,7 +224,10 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
         if (query.startsWith("tag:#")) {
           const tag = query.substring(5).trim()
-          if (d.tags.includes(tag) || (d.id.startsWith("tags/") && d.id.substring(5) === tag)) {
+          if (
+            d.tags.some((t) => t === tag || t.startsWith(tag + "/")) ||
+            (d.id.startsWith("tags/") && (d.id.substring(5) === tag || d.id.substring(5).startsWith(tag + "/")))
+          ) {
             nodeColor = group.color
           }
         } else if (query.startsWith("path:")) {
