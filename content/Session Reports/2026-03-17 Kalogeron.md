@@ -10,7 +10,7 @@ date: 2026-03-17
 # Wise Decisions
 
 > [!abstract]
-> 
+> The player characters investigated a plague in Cliford, discovering it was caused by a hag with whom the Duke's archivist made a deal, and secured a down payment from the Duke to deal with the hag. 
 
 ## [[pc|Player Character]]s
 - [[Lhothrash Silnareon]]
