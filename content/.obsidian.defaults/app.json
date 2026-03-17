@@ -1,6 +1,6 @@
 {
   "alwaysUpdateLinks": false,
   "showUnsupportedFiles": false,
-  "attachmentFolderPath": "_META/_ATTACHMENTS",
+  "attachmentFolderPath": "_META/_attachments",
   "vimMode": false
 }

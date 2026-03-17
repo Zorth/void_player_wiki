@@ -1,24 +1,24 @@
 GEMINI
 index
-_META/_ancestryexemptions
-_META/_callouts
-_META/_campaign_guidelines
-_META/_contributing
-_META/_crafting
-_META/_death
-_META/_downtime
-_META/_earnincome
-_META/_getting_started
-_META/_gming
-_META/_guidelines
-_META/_hexploration_sythian
-_META/_learnspell
-_META/_ranks
-_META/_session_reports
+_meta/_ancestryexemptions
+_meta/_callouts
+_meta/_campaign_guidelines
+_meta/_contributing
+_meta/_crafting
+_meta/_death
+_meta/_downtime
+_meta/_earnincome
+_meta/_getting_started
+_meta/_gming
+_meta/_guidelines
+_meta/_hexploration_sythian
+_meta/_learnspell
+_meta/_ranks
+_meta/_session_reports
 _META/_TEMPLATES/_NEWNOTE
 _META/_TEMPLATES/_SESSIONNOTE
-_META/_treasure
-_META/_XP
+_meta/_treasure
+_meta/_xp
 Player Characters/Bramble
 Player Characters/Dalia Nines
 Player Characters/David Vritz
