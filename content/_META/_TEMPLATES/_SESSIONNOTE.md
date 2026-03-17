@@ -5,21 +5,17 @@ aliases:
   -
 date:
 ---
-
 #session `<World>`
 
 # `<Session Title>`
 
 > [!abstract]
-> Objective, information-dense summary of the session. (In-character/narrative reports belong on Discord).
+> `Summary of session`
 
 ## [[pc|Player Character]]s
 
 -
 
-## Key Events & Discoveries (Objective)
-- [ ] 
-- [ ] 
 
 ## Notes
 -

@@ -3,15 +3,14 @@ title:
 draft: false
 aliases:
   - 
-date:
+date: 2026-03-17
 ---
-
 #session [[Kalogeron]]
 
-# `<Session Title>`
+# Wise Decisions
 
 > [!abstract]
-> Objective, information-dense summary of the session. (In-character/narrative reports belong on Discord).
+> 
 
 ## [[pc|Player Character]]s
 - [[Lhothrash Silnareon]]
@@ -21,9 +20,6 @@ date:
 - [[Olive]]
 - [[Daveed]]
 
-## Key Events & Discoveries (Objective)
-- [ ] 
-- [ ] 
-
 ## Notes
--
+- PREMISE: Duke of [[Cliford]] is doing underground dealings. There also seems to be a plague
+- Met with [[Fur Naz]], there is a convoy in 4 days to [[Cliford]].
