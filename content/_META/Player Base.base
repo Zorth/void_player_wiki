@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.tags.contains("pc")
+views:
+  - type: cards
+    name: Cards
+    groupBy:
+      property: file.tags
+      direction: DESC
+    order:
+      - file.name
+      - level
+    sort:
+      - property: level
+        direction: DESC
+    image: note.image
+  - type: table
+    name: Table
+    order:
+      - level
+      - file.name
+      - file.tags
+    sort:
+      - property: level
+        direction: DESC
+    columnSize:
+      note.level: 49
