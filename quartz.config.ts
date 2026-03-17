@@ -11,7 +11,7 @@ const config: QuartzConfig = {
     pageTitle: "The Void Player Wiki",
     pageTitleSuffix: " | Void Wiki",
     enableSPA: true,
-    enablePopovers: true,
+    enablePopovers: false,
     analytics: {
       provider: "plausible",
     },
