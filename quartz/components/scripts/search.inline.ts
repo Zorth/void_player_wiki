@@ -184,6 +184,7 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
 
   function hideSearch() {
     container.classList.remove("active")
+    document.body.classList.remove("modal-open")
     searchBar.value = "" // clear the input when we dismiss the search
     if (sidebar) sidebar.style.zIndex = ""
     removeAllChildren(results)
@@ -199,6 +200,7 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     searchType = searchTypeNew
     if (sidebar) sidebar.style.zIndex = "1"
     container.classList.add("active")
+    document.body.classList.add("modal-open")
     searchBar.focus()
   }
 

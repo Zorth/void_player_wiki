@@ -1,4 +1,4 @@
-import { computePosition, flip, inline, shift } from "@floating-ui/dom"
+import { computePosition, flip, inline, shift, offset } from "@floating-ui/dom"
 import { normalizeRelativeURLs } from "../../util/path"
 import { fetchCanonical } from "./util"
 
@@ -17,7 +17,7 @@ async function mouseEnterHandler(
   async function setPosition(popoverElement: HTMLElement) {
     const { x, y } = await computePosition(link, popoverElement, {
       strategy: "fixed",
-      middleware: [inline({ x: clientX, y: clientY }), shift(), flip()],
+      middleware: [inline({ x: clientX, y: clientY }), offset(10), flip(), shift()],
     })
     Object.assign(popoverElement.style, {
       transform: `translate(${x.toFixed()}px, ${y.toFixed()}px)`,
