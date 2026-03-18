@@ -637,6 +637,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     const slug = getFullSlug(window)
     for (const container of containers) {
       container.classList.add("active")
+      document.body.classList.add("modal-open")
       const sidebar = container.closest(".sidebar") as HTMLElement
       if (sidebar) {
         sidebar.style.zIndex = "1"
@@ -654,6 +655,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     cleanupGlobalGraphs()
     for (const container of containers) {
       container.classList.remove("active")
+      document.body.classList.remove("modal-open")
       const sidebar = container.closest(".sidebar") as HTMLElement
       if (sidebar) {
         sidebar.style.zIndex = ""

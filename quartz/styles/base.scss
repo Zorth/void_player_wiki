@@ -9,6 +9,10 @@ html {
   text-size-adjust: none;
   overflow-x: hidden;
   width: 100vw;
+
+  &:has(body.modal-open) {
+    overflow: hidden;
+  }
 }
 
 body {

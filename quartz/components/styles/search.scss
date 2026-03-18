@@ -53,6 +53,7 @@
     overflow-y: auto;
     display: none;
     backdrop-filter: blur(4px);
+    overscroll-behavior: contain;
 
     &.active {
       display: inline-block;
