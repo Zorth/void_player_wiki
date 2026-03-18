@@ -21,9 +21,16 @@ body {
   background-color: var(--light);
   font-family: var(--bodyFont);
   color: var(--darkgray);
+  overflow-x: hidden;
 
   &.modal-open {
-    overflow: hidden;
+    overflow: hidden !important;
+  }
+}
+
+#quartz-root {
+  &.page-wrapper {
+    animation: page-in 0.3s ease-out forwards;
   }
 }
 

@@ -263,7 +263,7 @@ export function renderPage(
     <html lang={lang} dir={direction}>
       <Head {...componentData} />
       <body data-slug={slug}>
-        <div id="quartz-root" class="page">
+        <div id="quartz-root" class="page page-wrapper">
           <Body {...componentData}>
             {LeftComponent}
             <div class="center">
