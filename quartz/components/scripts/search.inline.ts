@@ -396,7 +396,11 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     const highlights = [...preview.getElementsByClassName("highlight")].sort(
       (a, b) => b.innerHTML.length - a.innerHTML.length,
     )
-    highlights[0]?.scrollIntoView({ block: "start" })
+    if (highlights[0]) {
+      const parentRect = preview.getBoundingClientRect()
+      const childRect = highlights[0].getBoundingClientRect()
+      preview.scrollTop += childRect.top - parentRect.top - 100
+    }
   }
 
   async function onType(e: HTMLElementEventMap["input"]) {
