@@ -13,7 +13,7 @@ date: 2026-02-03
 [[Pitaya]] has requested the new recruits within [[The Void]] to help out getting info on Kalogeron and the Houses.
 
 ## Player Characters
-[[Scully of the Tribe of Wug]] and [[Gob Goblin]] both scoured the great library and its archives to learn more about the houses.
+[[Scully of the Tribe of Wug]] and [[Gob]] both scoured the great library and its archives to learn more about the houses.
 
 They did not manage to cover everything due to the immense amount of reading, lore and amount of houses. Some info might be "supplied" from other members within The Void.
 We suspect there might be more houses than mentioned (Especially Vassal Houses)
