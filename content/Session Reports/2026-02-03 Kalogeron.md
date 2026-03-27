@@ -93,7 +93,7 @@ Apologies for any names misspelled that were not in the codex already.
 # The Ruling Body
 
 ## House [[Fortuna]]
-- Leader: [[Fortuna]]
+- Leader: [[Lady Fortuna]]
 - Business/Interest: ???
 - Vassals: ???
 - Notable Connections:
@@ -119,7 +119,7 @@ Apologies for any names misspelled that were not in the codex already.
 			- Portals & Teleportation
 		- Notable Connections: His Husband [[Gartir Naz]]
 	- House [[Wonders]]
-		- Leader: [[Alphons Wonders]]?? Not confirmed or sure
+		- Leader: [[Alphons Wonders]]
 		- Business/Interest: 
 			- Diplomat of Esoteric and its vassals. Also dabbles in scrolls.
 		- Notable Connections: -
