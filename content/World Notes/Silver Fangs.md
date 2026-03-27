@@ -5,7 +5,7 @@ aliases:
   - 
 date:
 ---
-#world [[Hilonor]]
+[[Hilonor]]
 
 Silver fangs are indicators of rank and combat proficiency within the [[Iron Fang Convoy]].
 
