@@ -6,6 +6,7 @@ aliases:
   - The Redeemer
 date: 2026-02-03
 ---
+
 [[Kalogeron]]
 
 > [!abstract]

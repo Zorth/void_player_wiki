@@ -1,5 +1,5 @@
 ---
-title:
+title: Era of Unity
 draft: false
 aliases:
   - EoU

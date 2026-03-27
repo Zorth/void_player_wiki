@@ -24,15 +24,15 @@ It's a farming village but their main export is wood.
 
 -Local lord [[Lord Korwin MacLeod|Lord MacLeod]]
 
--There is a rebellion going on led by [[The Gray Scarf Militia]]
--Currently the [[The Gray Scarf Militia|militia]] is laying low after two of their leading members got captured.
+-There is a rebellion going on led by [[Gray Scarf Militia]]
+-Currently the [[Gray Scarf Militia|militia]] is laying low after two of their leading members got captured.
 -Leaders: [["Cool" Kairos]] and his two brothers(captured).
 
 # Standing
 
 -We are currently in a "neutral" zone between the two parties.
 -We have helped [[Lord Korwin MacLeod|the lord]] with a quest.
--We have a Truce with [[The Gray Scarf Militia]]
+-We have a Truce with [[Gray Scarf Militia]]
 
 # Recent Events
 

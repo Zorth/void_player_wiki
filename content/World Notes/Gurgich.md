@@ -7,7 +7,7 @@ date:
 ---
 #location/settlement [[Hilonor]]
 
-The starting village in [[Hilonor]] for the [[The Void|Void]], located in the [[Evolution Epicentre]].
+The starting village in [[Hilonor]] for the [[The Void]], located in the [[Evolution Epicentre]].
 
 ## Notable Locations
 

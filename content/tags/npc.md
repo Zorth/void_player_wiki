@@ -6,4 +6,4 @@ aliases:
 date:
 ---
 
-non-player characters.
+non-player characters. Note: Gods and deities are NOT considered NPCs.

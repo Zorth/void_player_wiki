@@ -1,5 +1,5 @@
 ---
-title:
+title: Coins of Zenith
 draft: false
 aliases:
   -
@@ -7,6 +7,7 @@ date:
 ---
 
 Ancient powerful artifacts that give power beyond measure.
+[[Zenith]]
 
 > [!question]
 > Might be linked to creation?
