@@ -31,6 +31,7 @@ Are you new to [[The Void]]? Or looking around on how to get started? Take a loo
 # Worlds
 
 - [[Asnyri]]
+- [[Hilonor]]
 - [[Kalogeron]]
 - [[Sythian]]
 - [[Verninthal]]
