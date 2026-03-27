@@ -1,8 +1,8 @@
 ---
-title: House Gitrinne
+title: Gitrinne
 draft: false
 aliases:
-  -
+  - House Gitrinne
 date: 2026-02-03
 ---
 

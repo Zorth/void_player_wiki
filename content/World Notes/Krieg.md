@@ -1,8 +1,8 @@
 ---
-title: House Krieg
+title: Krieg
 draft: false
 aliases:
-  -
+  - House Krieg
 date: 2026-02-03
 ---
 

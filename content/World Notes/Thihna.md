@@ -1,8 +1,8 @@
 ---
-title: House Thihna
+title: Thihna
 draft: false
 aliases:
-  -
+  - House Thihna
 date: 2026-02-03
 ---
 

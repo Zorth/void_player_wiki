@@ -1,8 +1,8 @@
 ---
-title: House Varithal
+title: Varithal
 draft: false
 aliases:
-  -
+  - House Varithal
 date: 2026-02-03
 ---
 

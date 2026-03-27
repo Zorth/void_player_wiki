@@ -1,8 +1,8 @@
 ---
-title: House Lyre
+title: Lyre
 draft: false
 aliases:
-  -
+  - House Lyre
 date: 2026-02-03
 ---
 

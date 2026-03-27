@@ -1,8 +1,8 @@
 ---
-title: House Klein
+title: Klein
 draft: false
 aliases:
-  -
+  - House Klein
 date: 2026-02-03
 ---
 

@@ -1,7 +1,8 @@
 ---
-title: House Zakna
+title: Zakna
 draft: false
 aliases:
+  - House Zakna
   - Zakna family
 date:
 ---

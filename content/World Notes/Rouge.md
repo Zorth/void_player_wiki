@@ -1,8 +1,8 @@
 ---
-title: House Rouge
+title: Rouge
 draft: false
 aliases:
-  -
+  - House Rouge
 date: 2026-02-03
 ---
 

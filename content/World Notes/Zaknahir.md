@@ -7,4 +7,4 @@ date:
 ---
 #location/settlement [[Hilonor]]
 
-The capital of the [[House Zakna|Zakna]] family region in the [[Evolution Epicentre]].
+The capital of the [[Zakna]] family region in the [[Evolution Epicentre]].

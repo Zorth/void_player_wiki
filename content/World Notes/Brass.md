@@ -1,8 +1,8 @@
 ---
-title: House Brass
+title: Brass
 draft: false
 aliases:
-  -
+  - House Brass
 date: 2026-02-03
 ---
 

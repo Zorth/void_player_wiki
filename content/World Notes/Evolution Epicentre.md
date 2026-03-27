@@ -20,7 +20,7 @@ The country is divided among five different families, with a large central regio
 > The Country is divided, split up due to a great dispute the subject of which is lost due to time... There are 5 different families that rule over the Evolution Epicentre, the largest region being a common ground where their findings are shared and collaborative efforts happen.
 
 ### Known Families
-- [[House Zakna]] (Zakna family)
+- [[Zakna]] (Zakna family)
 
 ## Notable Settlements
 - [[Gurgich]]: Starting village for the [[The Void|Void]].

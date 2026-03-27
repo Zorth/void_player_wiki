@@ -1,8 +1,8 @@
 ---
-title: House Maimond
+title: Maimond
 draft: false
 aliases:
-  -
+  - House Maimond
 date: 2026-02-03
 ---
 

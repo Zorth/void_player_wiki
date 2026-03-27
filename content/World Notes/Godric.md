@@ -1,8 +1,8 @@
 ---
-title: House Godric
+title: Godric
 draft: false
 aliases:
-  -
+  - House Godric
 date: 2026-02-03
 ---
 

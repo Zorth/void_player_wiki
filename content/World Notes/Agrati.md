@@ -1,8 +1,8 @@
 ---
-title: House Agrati
+title: Agrati
 draft: false
 aliases:
-  -
+  - House Agrati
 date: 2026-02-03
 ---
 
