@@ -5,7 +5,7 @@ aliases:
   - 
 date:
 ---
-#world [[Hilonor]]
+[[Hilonor]]
 
 Necromancy is a skill that is not yet fully mastered by mankind in [[Hilonor]].
 
