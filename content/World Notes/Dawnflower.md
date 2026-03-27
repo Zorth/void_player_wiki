@@ -6,8 +6,7 @@ aliases:
   - The Redeemer
 date: 2026-02-03
 ---
-
-#world [[Kalogeron]]
+[[Kalogeron]]
 
 > [!abstract]
 > A deity known as the Redeemer.
