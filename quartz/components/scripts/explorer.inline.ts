@@ -1,6 +1,7 @@
 import { FileTrieNode } from "../../util/fileTrie"
 import { FullSlug, resolveRelative, simplifySlug } from "../../util/path"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
+import { removeAllChildren } from "./util"
 
 type MaybeHTMLElement = HTMLElement | undefined
 
@@ -176,7 +177,7 @@ async function setupExplorer(currentSlug: FullSlug) {
     const filterTarget = localStorage.getItem("explorerFilterTarget") as FullSlug | null
 
     const data = await fetchData
-    const entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
+    let entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
 
     if (worldFilterEl) {
       // Populate worlds if not already populated
@@ -199,6 +200,14 @@ async function setupExplorer(currentSlug: FullSlug) {
         }
       }
       worldFilterEl.value = filterTarget ?? ""
+    }
+
+    if (filterTarget && filterTarget !== "") {
+      const targetSimpleSlug = simplifySlug(filterTarget)
+      entries = entries.filter(([slug, details]) => {
+        if (slug === filterTarget) return true
+        return details.links.includes(targetSimpleSlug)
+      })
     }
 
     const trie = FileTrieNode.fromEntries(entries)
@@ -231,6 +240,11 @@ async function setupExplorer(currentSlug: FullSlug) {
 
     const explorerUl = explorer.querySelector(".explorer-ul")
     if (!explorerUl) continue
+
+    // Clear existing content except the overflow-end marker
+    const endMarker = explorerUl.querySelector(".overflow-end")
+    removeAllChildren(explorerUl as HTMLElement)
+    if (endMarker) explorerUl.appendChild(endMarker)
 
     // Create and insert new content
     const fragment = document.createDocumentFragment()

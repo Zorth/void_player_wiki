@@ -164,5 +164,4 @@ export const defaultListPageLayout: PageLayout = {
         }),
     ],
     right: [],
-    afterBody: [Component.Backlinks()],
 }
