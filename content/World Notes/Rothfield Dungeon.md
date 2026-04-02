@@ -1,13 +1,14 @@
 ---
-tags:
-  - location
-level: 1.12
 title:
 draft: false
 aliases:
   - 
 date:
 ---
+#location [[Sythian]]
+
+Levels 1-12
+
 > [!info]
 > The dungeon in the city of [[Rothfield]]
 
