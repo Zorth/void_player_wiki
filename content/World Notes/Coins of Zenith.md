@@ -5,6 +5,7 @@ aliases:
   -
 date:
 ---
+[[Zenith]]
 
 Ancient powerful artifacts that give power beyond measure.
 [[Zenith]]
