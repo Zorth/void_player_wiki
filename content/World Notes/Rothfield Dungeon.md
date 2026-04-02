@@ -2,6 +2,11 @@
 tags:
   - location
 level: 1.12
+title:
+draft: false
+aliases:
+  - 
+date:
 ---
 > [!info]
 > The dungeon in the city of [[Rothfield]]
