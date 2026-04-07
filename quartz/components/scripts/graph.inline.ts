@@ -647,7 +647,11 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
       }
 
       const graphContainer = container.querySelector(".global-graph-container") as HTMLElement
+      const closeButton = container.querySelector(".global-graph-close-icon") as HTMLElement
       registerEscapeHandler(container, hideGlobalGraph)
+      if (closeButton) {
+        closeButton.addEventListener("click", hideGlobalGraph)
+      }
       if (graphContainer) {
         globalGraphCleanups.push(await renderGraph(graphContainer, slug))
       }

@@ -43,15 +43,18 @@
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background-color: color-mix(in srgb, var(--light), transparent 20%);
     display: none;
     overflow: hidden;
     overscroll-behavior: contain;
 
     &.active {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     & > .global-graph-container {
@@ -59,15 +62,41 @@
       background-color: var(--light);
       border-radius: 5px;
       box-sizing: border-box;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 80vh;
-      width: 80vw;
+      position: relative;
+      height: 90vh;
+      width: 90vw;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 
-      @media all and not ($desktop) {
-        width: 90%;
+      @media all and ($mobile) {
+        width: 100%;
+        height: 100dvh;
+        border: none;
+        border-radius: 0;
+      }
+
+      & > .global-graph-close-icon {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: var(--dark);
+        opacity: 0.5;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        padding: 0.4rem;
+        margin: 0.5rem;
+        top: 0;
+        right: 0;
+        border-radius: 4px;
+        background-color: transparent;
+        transition:
+          background-color 0.5s ease,
+          opacity 0.2s ease;
+        z-index: 10000;
+        &:hover {
+          background-color: var(--lightgray);
+          opacity: 1;
+        }
       }
     }
   }
