@@ -17,7 +17,8 @@
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
-    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1"
+    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
+    "sync": "node scripts/sync-stats.mjs"
   },
   "engines": {
     "npm": ">=10.9.2",
@@ -34,7 +35,7 @@
   "bin": {
     "quartz": "./quartz/bootstrap-cli.mjs"
   },
-    "dependencies": {
+  "dependencies": {
     "@clack/prompts": "^0.11.0",
     "@floating-ui/dom": "^1.7.4",
     "@myriaddreamin/rehype-typst": "^0.6.0",
@@ -106,6 +107,7 @@
     "@types/source-map-support": "^0.5.10",
     "@types/ws": "^8.18.1",
     "@types/yargs": "^17.0.35",
+    "convex": "^1.34.1",
     "esbuild": "^0.27.2",
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
