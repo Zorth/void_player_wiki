@@ -682,9 +682,11 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 
   const containerIcons = document.getElementsByClassName("global-graph-icon")
   Array.from(containerIcons).forEach((icon) => {
-    icon.addEventListener("click", renderGlobalGraph)
-    window.addCleanup(() => icon.removeEventListener("click", renderGlobalGraph))
+    const handler = () => void renderGlobalGraph()
+    icon.addEventListener("click", handler)
+    window.addCleanup(() => icon.removeEventListener("click", handler))
   })
+
 
   document.addEventListener("keydown", shortcutHandler)
   window.addCleanup(() => {

@@ -136,10 +136,10 @@ async function renderLeaflet() {
     // This is a placeholder for future expansion.
 
     window.addCleanup(() => {
-        map.remove()
-        container.remove()
-        pre.style.display = "block"
-        delete pre.dataset.processed
+      map.remove()
+      container.remove()
+      pre.style.display = "block"
+      delete pre.dataset.processed
     })
   }
 }
