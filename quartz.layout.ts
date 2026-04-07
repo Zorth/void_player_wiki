@@ -8,6 +8,8 @@ export const sharedPageComponents: SharedLayout = {
     afterBody: [
         Component.Backlinks(),
         Component.Leaflet(),
+        Component.Chronology(),
+        Component.FolderCards(),
     ],
     footer: Component.Footer({
         links: {

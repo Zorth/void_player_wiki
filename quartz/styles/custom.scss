@@ -99,3 +99,57 @@ h1 {
   }
 }
 
+// Character Tooltip Styling
+#character-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  align-items: center;
+  border: 1px solid #e6b325; // Gold border
+  background: color-mix(in srgb, var(--light), #e6b325 5%);
+  border-radius: 8px;
+  max-width: 450px;
+
+  & .portrait {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #e6b325;
+    flex-shrink: 0;
+  }
+
+  & .info {
+    flex-grow: 1;
+
+    & .name {
+      font-family: "Taroca", serif;
+      font-size: 1.4rem;
+      margin: 0;
+      color: var(--secondary);
+    }
+
+    & .stats {
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+      color: var(--darkgray);
+      
+      & span {
+        display: block;
+        & strong {
+            color: var(--dark);
+        }
+      }
+    }
+  }
+}
+
+// Hide the card on the actual page, only show it in the popover
+article #character-card {
+    display: none;
+}
+
+.active-popover #character-card {
+    display: flex !important;
+}
+

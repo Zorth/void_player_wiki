@@ -24,6 +24,8 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import Leaflet from "./Leaflet"
+import Chronology from "./Chronology"
+import FolderCards from "./FolderCards"
 
 export {
   ArticleTitle,
@@ -52,4 +54,6 @@ export {
   Flex,
   ConditionalRender,
   Leaflet,
+  Chronology,
+  FolderCards,
 }

@@ -1,0 +1,48 @@
+.chronology {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--lightgray);
+  gap: 1rem;
+
+  & a {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 8px;
+    flex: 1;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: var(--highlight);
+      border-color: var(--secondary);
+    }
+
+    & .label {
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin-bottom: 0.2rem;
+    }
+
+    & .title {
+      font-weight: bold;
+      color: var(--secondary);
+    }
+
+    &.prev {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &.next {
+      align-items: flex-end;
+      text-align: right;
+    }
+  }
+
+  & .empty {
+    flex: 1;
+  }
+}
