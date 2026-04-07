@@ -67,6 +67,14 @@
       width: 90vw;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 
+      & > .global-graph-canvas {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
       @media all and ($mobile) {
         width: 100%;
         height: 100dvh;

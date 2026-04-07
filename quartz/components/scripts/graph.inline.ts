@@ -649,13 +649,14 @@ document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
       }
 
       const graphContainer = container.querySelector(".global-graph-container") as HTMLElement
+      const canvasContainer = container.querySelector(".global-graph-canvas") as HTMLElement
       const closeButton = container.querySelector(".global-graph-close-icon") as HTMLElement
       registerEscapeHandler(container, hideGlobalGraph)
       if (closeButton) {
         closeButton.addEventListener("click", hideGlobalGraph)
       }
-      if (graphContainer) {
-        void renderGraph(graphContainer, slug).then((cleanup) => globalGraphCleanups.push(cleanup))
+      if (canvasContainer) {
+        void renderGraph(canvasContainer, slug).then((cleanup) => globalGraphCleanups.push(cleanup))
       }
     }
   }
