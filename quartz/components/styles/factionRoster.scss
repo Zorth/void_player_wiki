@@ -1,0 +1,41 @@
+.faction-roster {
+  margin-top: 2rem;
+
+  & .member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  & .member-card {
+    display: flex;
+    padding: 0.8rem 1.2rem;
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: var(--secondary);
+      background-color: var(--highlight);
+    }
+
+    & .member-info {
+      display: flex;
+      flex-direction: column;
+
+      & .name {
+        font-weight: bold;
+        color: var(--secondary);
+      }
+
+      & .role {
+        font-size: 0.8rem;
+        color: var(--gray);
+      }
+    }
+  }
+}

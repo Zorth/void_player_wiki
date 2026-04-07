@@ -26,6 +26,8 @@ import ConditionalRender from "./ConditionalRender"
 import Leaflet from "./Leaflet"
 import Chronology from "./Chronology"
 import FolderCards from "./FolderCards"
+import FactionRoster from "./FactionRoster"
+import Timeline from "./Timeline"
 
 export {
   ArticleTitle,
@@ -56,4 +58,6 @@ export {
   Leaflet,
   Chronology,
   FolderCards,
+  FactionRoster,
+  Timeline,
 }
