@@ -36,24 +36,24 @@
   --callout-icon-loot: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.91 8.84 8.56 2.23a1.93 1.93 0 0 0-1.81 0L3.1 4.13a2.12 2.12 0 0 0-.05 3.69l12.22 6.73a2 2 0 0 0 1.88 0L20.9 12.5a2.1 2.1 0 0 0 .01-3.66Z"></path><path d="m3 13 13.5 7.5L21 18"></path><path d="M16.5 20.5v-2.2"></path><path d="m3 13 5.62-3.08"></path><path d="M20.91 8.84 21 18"></path><path d="M3 13v5l3.3 1.9"></path><path d="M3 7v2"></path></svg>');
 
   &[data-callout] {
-    --color: #448aff;
-    --border: #448aff44;
-    --bg: #448aff10;
+    --color: #7c3aed;
+    --border: #7c3aed44;
+    --bg: #7c3aed10;
     --callout-icon: var(--callout-icon-note);
   }
 
   &[data-callout="abstract"] {
-    --color: #00b0ff;
-    --border: #00b0ff44;
-    --bg: #00b0ff10;
+    --color: #8b5cf6;
+    --border: #8b5cf644;
+    --bg: #8b5cf610;
     --callout-icon: var(--callout-icon-abstract);
   }
 
   &[data-callout="info"],
   &[data-callout="todo"] {
-    --color: #00b8d4;
-    --border: #00b8d444;
-    --bg: #00b8d410;
+    --color: #6366f1;
+    --border: #6366f144;
+    --bg: #6366f110;
     --callout-icon: var(--callout-icon-info);
   }
 
