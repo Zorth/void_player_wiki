@@ -40,11 +40,11 @@
 
   & > .global-graph-outer {
     position: fixed;
-    z-index: 9999;
+    z-index: 10000;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     backdrop-filter: blur(8px);
     background-color: color-mix(in srgb, var(--light), transparent 20%);
     display: none;
@@ -52,7 +52,7 @@
     overscroll-behavior: contain;
 
     &.active {
-      display: flex;
+      display: flex !important;
       justify-content: center;
       align-items: center;
     }

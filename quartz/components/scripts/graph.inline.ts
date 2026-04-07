@@ -639,37 +639,35 @@ document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
 
   const containers = [...document.getElementsByClassName("global-graph-outer")] as HTMLElement[]
   const renderGlobalGraph = () => {
+    console.log("Rendering global graph...")
     const slug = getFullSlug(window)
     for (const container of containers) {
       container.classList.add("active")
       document.body.classList.add("modal-open")
-      const sidebar = container.closest(".sidebar") as HTMLElement
-      if (sidebar) {
-        sidebar.style.zIndex = "1"
-      }
 
-      const graphContainer = container.querySelector(".global-graph-container") as HTMLElement
       const canvasContainer = container.querySelector(".global-graph-canvas") as HTMLElement
       const closeButton = container.querySelector(".global-graph-close-icon") as HTMLElement
       registerEscapeHandler(container, hideGlobalGraph)
+      
       if (closeButton) {
-        closeButton.addEventListener("click", hideGlobalGraph)
+        closeButton.onclick = hideGlobalGraph
       }
+
       if (canvasContainer) {
-        void renderGraph(canvasContainer, slug).then((cleanup) => globalGraphCleanups.push(cleanup))
+        // Wait for a frame to ensure dimensions are updated after classList.add("active")
+        requestAnimationFrame(() => {
+          void renderGraph(canvasContainer, slug).then((cleanup) => globalGraphCleanups.push(cleanup))
+        })
       }
     }
   }
 
   function hideGlobalGraph() {
+    console.log("Hiding global graph")
     cleanupGlobalGraphs()
     for (const container of containers) {
       container.classList.remove("active")
       document.body.classList.remove("modal-open")
-      const sidebar = container.closest(".sidebar") as HTMLElement
-      if (sidebar) {
-        sidebar.style.zIndex = ""
-      }
     }
   }
 
