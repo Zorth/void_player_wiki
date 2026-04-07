@@ -93,7 +93,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
   const data: Map<SimpleSlug, ContentDetails> = new Map(
-    Object.entries<ContentDetails>(await fetchData)
+    Object.entries<ContentDetails>(await window.fetchData)
       .filter(([k]) => {
         if (!excludePath) return true
         return !excludePath.some((path) => k.startsWith(path))
@@ -613,21 +613,23 @@ function cleanupGlobalGraphs() {
   globalGraphCleanups = []
 }
 
-document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
+document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
   const slug = e.detail.url
   addToVisited(simplifySlug(slug))
 
-  async function renderLocalGraph() {
+  const renderLocalGraph = () => {
     cleanupLocalGraphs()
     const localGraphContainers = document.getElementsByClassName("graph-container")
     for (const container of localGraphContainers) {
-      localGraphCleanups.push(await renderGraph(container as HTMLElement, slug))
+      void renderGraph(container as HTMLElement, slug).then((cleanup) =>
+        localGraphCleanups.push(cleanup),
+      )
     }
   }
 
-  await renderLocalGraph()
+  renderLocalGraph()
   const handleThemeChange = () => {
-    void renderLocalGraph()
+    renderLocalGraph()
   }
 
   document.addEventListener("themechange", handleThemeChange)
@@ -636,7 +638,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   })
 
   const containers = [...document.getElementsByClassName("global-graph-outer")] as HTMLElement[]
-  async function renderGlobalGraph() {
+  const renderGlobalGraph = () => {
     const slug = getFullSlug(window)
     for (const container of containers) {
       container.classList.add("active")
@@ -653,7 +655,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
         closeButton.addEventListener("click", hideGlobalGraph)
       }
       if (graphContainer) {
-        globalGraphCleanups.push(await renderGraph(graphContainer, slug))
+        void renderGraph(graphContainer, slug).then((cleanup) => globalGraphCleanups.push(cleanup))
       }
     }
   }
@@ -670,7 +672,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     }
   }
 
-  async function shortcutHandler(e: HTMLElementEventMap["keydown"]) {
+  const shortcutHandler = (e: HTMLElementEventMap["keydown"]) => {
     if (e.key === "g" && (e.ctrlKey || e.metaKey) && !e.shiftKey) {
       e.preventDefault()
       const anyGlobalGraphOpen = containers.some((container) =>
@@ -682,11 +684,10 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 
   const containerIcons = document.getElementsByClassName("global-graph-icon")
   Array.from(containerIcons).forEach((icon) => {
-    const handler = () => void renderGlobalGraph()
+    const handler = () => renderGlobalGraph()
     icon.addEventListener("click", handler)
     window.addCleanup(() => icon.removeEventListener("click", handler))
   })
-
 
   document.addEventListener("keydown", shortcutHandler)
   window.addCleanup(() => {

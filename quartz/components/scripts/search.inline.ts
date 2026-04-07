@@ -498,11 +498,12 @@ async function fillDocument(data: ContentIndex) {
   indexPopulated = true
 }
 
-document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
+document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
-  const data = await fetchData
-  const searchElement = document.getElementsByClassName("search")
-  for (const element of searchElement) {
-    await setupSearch(element, currentSlug, data)
-  }
+  window.fetchData.then(async (data) => {
+    const searchElement = document.getElementsByClassName("search")
+    for (const element of searchElement) {
+      await setupSearch(element, currentSlug, data)
+    }
+  })
 })

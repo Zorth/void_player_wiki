@@ -176,7 +176,7 @@ async function setupExplorer(currentSlug: FullSlug) {
     const worldFilterEl = explorer.querySelector("#explorer-world-filter") as HTMLSelectElement
     const filterTarget = localStorage.getItem("explorerFilterTarget") as FullSlug | null
 
-    const data = await fetchData
+    const data = await window.fetchData
     let entries = [...Object.entries(data)] as [FullSlug, ContentDetails][]
 
     if (worldFilterEl) {
@@ -318,25 +318,25 @@ document.addEventListener("prenav", async () => {
   sessionStorage.setItem("explorerScrollTop", explorer.scrollTop.toString())
 })
 
-document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
+document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
-  await setupExplorer(currentSlug)
+  setupExplorer(currentSlug).then(() => {
+    // if mobile hamburger is visible, collapse by default
+    for (const explorer of document.getElementsByClassName("explorer")) {
+      const mobileExplorer = explorer.querySelector(".mobile-explorer")
+      if (!mobileExplorer) return
 
-  // if mobile hamburger is visible, collapse by default
-  for (const explorer of document.getElementsByClassName("explorer")) {
-    const mobileExplorer = explorer.querySelector(".mobile-explorer")
-    if (!mobileExplorer) return
+      if (mobileExplorer.checkVisibility()) {
+        explorer.classList.add("collapsed")
+        explorer.setAttribute("aria-expanded", "false")
 
-    if (mobileExplorer.checkVisibility()) {
-      explorer.classList.add("collapsed")
-      explorer.setAttribute("aria-expanded", "false")
+        // Allow <html> to be scrollable when mobile explorer is collapsed
+        document.documentElement.classList.remove("mobile-no-scroll")
+      }
 
-      // Allow <html> to be scrollable when mobile explorer is collapsed
-      document.documentElement.classList.remove("mobile-no-scroll")
+      mobileExplorer.classList.remove("hide-until-loaded")
     }
-
-    mobileExplorer.classList.remove("hide-until-loaded")
-  }
+  })
 })
 
 window.addEventListener("resize", function () {
