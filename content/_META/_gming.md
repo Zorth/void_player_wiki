@@ -22,30 +22,10 @@ To become a **@Voidmaster**, contact the campaign leadership to be registered. O
 
 ---
 
-## Session Template
-
-When posting a session in `#🤝lfg` on Discord, use the following template:
-
-```markdown
-# <:Pathfinder:/:DnD: (pick one)> <Session Name>
-**World**: <insert world/location/...>
-**Recommended Level**: <recommended level>
-**Tags**: <session keywords/triggers>
-**Location**: <session location>
-**Time**: <session time>
-
-## Blurb
-<short description/hook of the session>
-```
-
-**Don't forget to tag your post!**
-
----
-
 ## Session Checklist
 
-1. **Plan**: Design the session and post it to `#🤝lfg`.
-2. **Guild**: Create the session on the **[Guild website](https://guild.tarragon.be)**.
+1. **Plan**: Design the session.
+2. **Guild**: Create the session on the **[Guild website](https://guild.tarragon.be)**. This will automatically post the session to `#🤝lfg`.
 3. **Confirm**: Confirm players, time, and location.
 4. **Run**: Run the session!
 5. **Reward**: Award XP to players and yourself.
