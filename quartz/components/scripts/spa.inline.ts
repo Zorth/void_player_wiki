@@ -5,7 +5,7 @@ import { fetchCanonical } from "./util"
 // adapted from `micromorph`
 // https://github.com/natemoo-re/micromorph
 const NODE_TYPE_ELEMENT = 1
-let announcer = document.createElement("route-announcer")
+const announcer = document.createElement("route-announcer")
 const isElement = (target: EventTarget | null): target is Element =>
   (target as Node)?.nodeType === NODE_TYPE_ELEMENT
 const isLocalUrl = (href: string) => {
@@ -39,9 +39,6 @@ function notifyNav(url: FullSlug) {
   const event: CustomEventMap["nav"] = new CustomEvent("nav", { detail: { url } })
   document.dispatchEvent(event)
 }
-
-const cleanupFns: Set<(...args: any[]) => void> = new Set()
-window.addCleanup = (fn) => cleanupFns.add(fn)
 
 function startLoading() {
   const loadingBar = document.createElement("div")
@@ -82,8 +79,8 @@ async function _navigate(url: URL, isBack: boolean = false) {
   document.dispatchEvent(event)
 
   // cleanup old
-  cleanupFns.forEach((fn) => fn())
-  cleanupFns.clear()
+  window.cleanupFns.forEach((fn) => fn())
+  window.cleanupFns.clear()
 
   const html = p.parseFromString(contents, "text/html")
   normalizeRelativeURLs(html, url)
