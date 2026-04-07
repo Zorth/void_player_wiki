@@ -73,6 +73,11 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const visited = getVisited()
   removeAllChildren(graph)
 
+  if (!graph.dataset["cfg"]) {
+    console.error("No graph configuration found on", graph)
+    return () => {}
+  }
+
   let {
     drag: enableDrag,
     zoom: enableZoom,

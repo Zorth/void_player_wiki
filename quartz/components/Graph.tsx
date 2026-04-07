@@ -102,8 +102,8 @@ export default ((opts?: Partial<GraphOptions>) => {
           </button>
         </div>
         <div class="global-graph-outer">
-          <div class="global-graph-container" data-cfg={JSON.stringify(globalGraph)}>
-            <div class="global-graph-canvas"></div>
+          <div class="global-graph-container">
+            <div class="global-graph-canvas" data-cfg={JSON.stringify(globalGraph)}></div>
             <button class="global-graph-close-icon" aria-label="Close">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
