@@ -646,6 +646,12 @@ document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
   const renderGlobalGraph = () => {
     console.log("Rendering global graph...")
     const slug = getFullSlug(window)
+    const configElement = document.getElementById("global-graph-cfg")
+    if (!configElement) {
+      console.error("No global graph configuration found")
+      return
+    }
+
     for (const container of containers) {
       container.classList.add("active")
       document.body.classList.add("modal-open")
@@ -659,6 +665,8 @@ document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
       }
 
       if (canvasContainer) {
+        // Copy config to canvas container for renderGraph to use
+        canvasContainer.dataset.cfg = configElement.dataset.cfg
         // Wait for a frame to ensure dimensions are updated after classList.add("active")
         requestAnimationFrame(() => {
           void renderGraph(canvasContainer, slug).then((cleanup) => globalGraphCleanups.push(cleanup))
