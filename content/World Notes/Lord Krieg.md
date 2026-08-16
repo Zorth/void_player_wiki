@@ -1,7 +1,8 @@
 ---
 title: Lord Krieg
 draft: false
-aliases: []
+aliases:
+- General Krieg
 date: 2026-02-03
 ---
 
