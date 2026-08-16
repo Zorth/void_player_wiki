@@ -38,4 +38,32 @@ date: 2026-08-16
 
 ![[Vael Marun.png]]
 
+- cathedral with 15 different symbols
+- [[Kalogeron Militia]] wearing identity hiding veil
+- meeting with [[Lord Krieg|General Krieg]]
+	- [[Foxwell]] made the veils
+	- target may be in cathedral or tower of mother sea/father sky at the docks
+- tavern night drinking
+	- approach by half elf, dark skin, dreads, [[Tarius]]
+- sleep
+- cathedral visit
+	- lots of smaller sub-temples
+	- the old one, the master of vaults, the lady Valor, father sky/mother sea, prism, merry wanderer, arcane eye, lady Fortuna, Dwarven father, iron lord, dawnflower, enlightened, red lady, wailing mother, stag father
+	- old elf sitting there
+	- gods here created 3 gems
+		- mother sea
+		- father sky
+		- combiner to merge the power/bind things
+	- mindra looking into gems
+	- meeting in the green tea shop
+		- throm
+		- connor
+		- mindra
+		- tarius
+		- want to transport 11 ppl
+	- meet right hand, setup to meet mason
+	- meet up with pupils again
+		- [[Maxime Mason]]
+			- ex [[Esoteric]] student
+		- Maxime + 4/11 captured
 
