@@ -35,3 +35,7 @@ date: 2026-08-16
 
 - black horses pulling cart to [[Vael’Marun]]
 	- bears are scared of the horses
+
+![[Vael Marun.png]]
+
+
