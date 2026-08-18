@@ -117,6 +117,9 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             const published = coalesceAliases(data, ["published", "publishDate", "date"])
             if (published) data.published = published
 
+            const author = coalesceAliases(data, ["author", "authors"])
+            if (author) data.author = author
+
             if (socialImage) data.socialImage = socialImage
 
             // Remove duplicate slugs
@@ -140,6 +143,8 @@ declare module "vfile" {
     } & Partial<{
         tags: string[]
         aliases: string[]
+        author: string | string[]
+        authors: string | string[]
         modified: string
         created: string
         published: string
