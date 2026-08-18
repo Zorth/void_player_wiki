@@ -4,6 +4,7 @@ draft: false
 aliases:
   -
 date: 2026-08-16
+author: Jasper
 ---
 #session [[Kalogeron]]
 
