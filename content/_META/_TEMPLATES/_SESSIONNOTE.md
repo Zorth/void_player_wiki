@@ -4,6 +4,7 @@ draft: false
 aliases:
   -
 date:
+author:
 ---
 #session `<World>`
 
