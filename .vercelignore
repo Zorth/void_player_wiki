@@ -1,0 +1,10 @@
+.DS_Store
+.git
+.gitignore
+.obsidian
+.trash
+.quartz-cache
+public
+prof
+private/
+*.log
