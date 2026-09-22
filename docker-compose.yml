@@ -25,6 +25,7 @@ services:
         condition: service_healthy
     volumes:
       - wiki-data:/wiki/data
+      - ./content:/wiki/content-import:ro
     networks:
       - wiki-net
 
