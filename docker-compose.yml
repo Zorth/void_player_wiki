@@ -1,0 +1,64 @@
+services:
+  wiki:
+    image: ghcr.io/requarks/wiki:2
+    container_name: void-wiki
+    restart: unless-stopped
+    environment:
+      DB_TYPE: postgres
+      DB_HOST: wiki-db
+      DB_PORT: 5432
+      DB_USER: ${DB_USER:-wikijs}
+      DB_PASS: ${DB_PASS:-wikijs_secret_pass}
+      DB_NAME: ${DB_NAME:-wiki}
+      PORT: 3000
+    ports:
+      - "${WIKI_BIND_IP:-127.0.0.1}:${WIKI_PORT:-3002}:3000"
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "1.0"
+        reservations:
+          memory: 256M
+    depends_on:
+      wiki-db:
+        condition: service_healthy
+    volumes:
+      - wiki-data:/wiki/data
+    networks:
+      - wiki-net
+
+  wiki-db:
+    image: postgres:15-alpine
+    container_name: void-wiki-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-wiki}
+      POSTGRES_USER: ${DB_USER:-wikijs}
+      POSTGRES_PASSWORD: ${DB_PASS:-wikijs_secret_pass}
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: "0.5"
+        reservations:
+          memory: 64M
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-wikijs} -d ${DB_NAME:-wiki}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - wiki-pg-data:/var/lib/postgresql/data
+    networks:
+      - wiki-net
+
+volumes:
+  wiki-data:
+    name: void-wiki-data
+  wiki-pg-data:
+    name: void-wiki-pg-data
+
+networks:
+  wiki-net:
+    name: void-wiki-network
