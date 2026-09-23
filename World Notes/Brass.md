@@ -1,0 +1,14 @@
+---
+title: Brass
+draft: false
+aliases:
+  - House Brass
+date: 2026-02-03
+---
+
+#organization [[Kalogeron]]
+
+> [!abstract]
+> A vassal house of House [[Canción]] within [[Kalogeron]].
+
+House Brass is a vassal of House [[Canción]].
