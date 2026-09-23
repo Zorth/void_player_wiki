@@ -34,6 +34,9 @@ Kalogeron is the metropolis city-state ran by Mattis. It is located on a land br
 
 Kalogeron is the oldest city to exist on Sythian, a bustling hub of trade, diverse beliefs, and persistent trouble. Its background allows for diverse character origins, often involving a recruiter from [[The Void]] acceptance test.
 
+![[City State of Greater Kalogeron.jpg]] ![[Kalogeron Devine Metropolis.png]]
+
+
 ## [[Old Pantheon|Deities]]
 
 The city's culture is deeply tied to the [[Old Pantheon]], with many citizens choosing a patron deity to guide their character's path.
