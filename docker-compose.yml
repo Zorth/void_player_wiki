@@ -26,7 +26,6 @@ services:
     volumes:
       - /thor-server/apps/void_player_wiki/data/wiki:/wiki/data
       - /mnt/whale/07_NOTES_WORKING/void_player_wiki:/wiki/storage
-      - /thor-server/apps/void_player_wiki/content:/wiki/content-import:ro
     networks:
       - wiki-net
 

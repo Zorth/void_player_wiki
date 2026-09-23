@@ -1,15 +1,18 @@
-.DS_Store
-.gitignore
-node_modules
-public
-prof
-tsconfig.tsbuildinfo
-.obsidian
-.quartz-cache
-private/
-.replit
-replit.nix
-content/copilot
-.trash
+# Local environment
 .env
 .env.local
+*.local
+
+# Persistent container data & database mounts
+data/
+
+# Operating System & Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Obsidian local cache
+.obsidian/
