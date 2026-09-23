@@ -8,11 +8,11 @@ services:
       DB_HOST: wiki-db
       DB_PORT: 5432
       DB_USER: ${DB_USER:-wikijs}
-      DB_PASS: ${DB_PASS:-wikijs_secret_pass}
+      DB_PASS: ${DB_PASS:-wiki_secret_password_thor_2026}
       DB_NAME: ${DB_NAME:-wiki}
       PORT: 3000
     ports:
-      - "${WIKI_BIND_IP:-127.0.0.1}:${WIKI_PORT:-3002}:3000"
+      - "${WIKI_BIND_IP:-127.0.0.1}:${WIKI_PORT:-3005}:3000"
     deploy:
       resources:
         limits:
@@ -24,8 +24,9 @@ services:
       wiki-db:
         condition: service_healthy
     volumes:
-      - wiki-data:/wiki/data
-      - ./content:/wiki/content-import:ro
+      - /thor-server/apps/void_player_wiki/data/wiki:/wiki/data
+      - /mnt/whale/07_NOTES_WORKING/void_player_wiki:/wiki/storage
+      - /thor-server/apps/void_player_wiki/content:/wiki/content-import:ro
     networks:
       - wiki-net
 
@@ -36,7 +37,7 @@ services:
     environment:
       POSTGRES_DB: ${DB_NAME:-wiki}
       POSTGRES_USER: ${DB_USER:-wikijs}
-      POSTGRES_PASSWORD: ${DB_PASS:-wikijs_secret_pass}
+      POSTGRES_PASSWORD: ${DB_PASS:-wiki_secret_password_thor_2026}
     deploy:
       resources:
         limits:
@@ -50,16 +51,11 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - wiki-pg-data:/var/lib/postgresql/data
+      - /thor-server/apps/void_player_wiki/data/postgres:/var/lib/postgresql/data
     networks:
       - wiki-net
-
-volumes:
-  wiki-data:
-    name: void-wiki-data
-  wiki-pg-data:
-    name: void-wiki-pg-data
 
 networks:
   wiki-net:
     name: void-wiki-network
+
